@@ -3,6 +3,7 @@
 
 <head runat="server">
     <title>Home</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="styles/bittsreset.css" rel="stylesheet" type="text/css" />
     <link href="styles/main.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto&display=swap" rel="stylesheet">
@@ -122,18 +123,23 @@
                 <li><a href="#" id="contactsBtn" class="navBtn">Contacts</a></li>
             </ul>
         </nav>
-        <input type="text" name="search" id="searchBar" />
-        <button id="searchBtn"></button>
-        <button id="shoppingCartBtn"></button>
+        <div class="search">
+            <input type="text" name="search" id="searchBar" />
+            <button id="searchBtn"><i class="fas fa-search"></i></button>
+        </div>
+        <button id="shoppingCartBtn"><i class="fas fa-shopping-cart"></i></button>
     </header>
 
-    <aside>
-        <section class="navbar">
-            <button class="navbarButton" id="#">Lorem Ipsum</button>
-            <button class="navbarButton" id="#">Lorem Ipsum</button>
-            <button class="navbarButton" id="#">Lorem Ipsum</button>
-            <button class="navbarButton" id="#">Lorem Ipsum</button>
-            <button class="navbarButton" id="#">Lorem Ipsum</button>
+    <aside class="aside">
+        <section class="sidebar">
+            <button id="btn">Button</button>
+            <div id="links">
+                <ul class="linkblock">
+                    <li><a href="#" >link1</a></li>
+                    <li><a href="#" >link2</a></li>
+                    <li><a href="#" >link3</a></li>
+                </ul>
+            </div>
         </section>
     </aside>
 
@@ -215,7 +221,7 @@
         </div>
         <section id="links">
             <div class="linksCard">
-                <h3>Lorem Ipsum</h3>
+                <h3>Cloth</h3>
                 <ul>
                     <li><a href="#">Link</a></li>
                     <li><a href="#">Link</a></li>
@@ -223,7 +229,7 @@
                 </ul>
             </div>
             <div class="linksCard">
-                <h3>Lorem Ipsum</h3>
+                <h3>Shose</h3>
                 <ul>
                     <li><a href="#">Link</a></li>
                     <li><a href="#">Link</a></li>
@@ -231,7 +237,7 @@
                 </ul>
             </div>
             <div class="linksCard">
-                <h3>Lorem Ipsum</h3>
+                <h3>Acessories</h3>
                 <ul>
                     <li><a href="#">Link</a></li>
                     <li><a href="#">Link</a></li>
