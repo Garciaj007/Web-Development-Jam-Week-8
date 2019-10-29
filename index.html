@@ -3,6 +3,7 @@
 
 <head runat="server">
     <title>Home</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="styles/bittsreset.css" rel="stylesheet" type="text/css" />
     <link href="styles/main.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto&display=swap" rel="stylesheet">
@@ -122,9 +123,11 @@
                 <li><a href="#" id="contactsBtn" class="navBtn">Contacts</a></li>
             </ul>
         </nav>
-        <input type="text" name="search" id="searchBar" />
-        <button id="searchBtn"></button>
-        <button id="shoppingCartBtn"></button>
+        <div class="search">
+            <input type="text" name="search" id="searchBar" />
+            <button id="searchBtn"><i class="fas fa-search"></i></button>
+        </div>
+        <button id="shoppingCartBtn"><i class="fas fa-shopping-cart"></i></button>
     </header>
 
     <aside>
