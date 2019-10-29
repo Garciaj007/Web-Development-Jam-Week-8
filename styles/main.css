@@ -1,9 +1,38 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Rubik");
-header, footer {
+body,
+a {
+  background-color: #FCFCFC;
+  color: #232323;
+}
+
+header,
+footer {
   background-color: #0065C4;
 }
 
-.logo img {
+header .logo img,
+footer .logo img {
   width: 100px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav#nav {
+  width: 300px;
+}
+
+header nav#nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav#nav ul li.navBtn {
+  padding: 0.4em;
+  margin: 0.8em;
 }
 /*# sourceMappingURL=main.css.map */

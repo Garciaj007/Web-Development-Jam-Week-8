@@ -15,15 +15,37 @@ $colors: (primary: #FCFCFC, secondary: #232323, accent1: #0065C4, accent2: #59D6
     @return rgba(getColor($color), $alpha);
 }
 
-header, footer
-{
-    background-color: getColor(accent1);
-
+body,
+a {
+    background-color: getColor(primary);
+    color: getColor(secondary);
 }
 
-.logo{
-    img{
-        width: 100px;
+header,
+footer {
+    background-color: getColor(accent1);
+
+    .logo {
+        img {
+            width: 100px;
+        }
     }
 }
 
+header {
+
+    display: flex;
+
+    nav#nav{
+        width: 300px;
+
+        ul{
+            display: flex;
+
+            li.navBtn{
+                padding: $padding;
+                margin: $margin;
+            }
+        }
+    }
+}
