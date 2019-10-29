@@ -1,1 +1,9 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Rubik");
+header, footer {
+  background-color: #0065C4;
+}
+
+.logo img {
+  width: 100px;
+}
+/*# sourceMappingURL=main.css.map */

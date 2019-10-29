@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Rubik");
+
+$margin: 0.8em;
+$padding: 0.4em;
+$border-width: 0.1em;
+$border-radius: 0pt;
+
+$colors: (primary: #FCFCFC, secondary: #232323, accent1: #0065C4, accent2: #59D6BD);
+
+@function getColor($color) {
+    @return map-get($map: $colors, $key: $color);
+}
+
+@function getColorAlpha($color, $alpha) {
+    @return rgba(getColor($color), $alpha);
+}
+
+header, footer
+{
+    background-color: getColor(accent1);
+
+}
+
+.logo{
+    img{
+        width: 100px;
+    }
+}
+

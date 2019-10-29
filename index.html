@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head runat="server">
     <title>Home</title>
-    <link href="/styles/bittsreset.css" rel="stylesheet" type="text/css"/>
-    <link href="/styles/main.css" rel="stylesheet" type="text/css"/>
+    <link href="/styles/bittsreset.css" rel="stylesheet" type="text/css" />
+    <link href="/styles/main.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto&display=swap" rel="stylesheet">
     <script src="scripts/validate.js"></script>
 </head>
+
 <body>
 
     <header>
-        <h1 id="logo"><img src="images/codejamlogo.jpg" width="100px" alt="the logo"></h1>
-          <nav id="nav">
-              <ul>
-                  <li><a href="#" id="homeBtn" class="navBtn">Home</a></li>
-                  <li><a href="#" id="merchBtn" class="navBtn">Merchandise</a></li>
-                  <li><a href="#" id="contactsBtn" class="navBtn">Contacts</a></li>
-              </ul>
-          </nav>
+        <div class="logo">
+            <img src="images/codejamlogo.jpg" alt="the logo">
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="#" id="homeBtn" class="navBtn">Home</a></li>
+                <li><a href="#" id="merchBtn" class="navBtn">Merchandise</a></li>
+                <li><a href="#" id="contactsBtn" class="navBtn">Contacts</a></li>
+            </ul>
+        </nav>
+        <input type="text" name="search" id="searchBar" />
+        <button id="searchBtn"></button>
+        <button id="shoppingCartBtn"></button>
     </header>
 
     <aside>
@@ -41,7 +48,50 @@
     </main>
 
     <footer>
-        
+        <div class="logo">
+            <img src="images/codejamlogo.jpg" alt="the logo">
+        </div>
+        <section id="links">
+            <div class="linksCard">
+                <h3>Lorem Ipsum</h3>
+                <ul>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                </ul>
+            </div>
+            <div class="linksCard">
+                <h3>Lorem Ipsum</h3>
+                <ul>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                </ul>
+            </div>
+            <div class="linksCard">
+                <h3>Lorem Ipsum</h3>
+                <ul>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                </ul>
+            </div>
+        </section>
+        <section id="socialMedia">
+            <div>
+                <img href="#" />
+                <p>Instagram</p>
+            </div>
+            <div>
+                <img href="#" />
+                <p>Twitter</p>
+            </div>
+            <div>
+                <img href="#" />
+                <p>Facebook</p>
+            </div>
+        </section>
     </footer>
 </body>
+
 </html>
