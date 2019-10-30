@@ -33,6 +33,9 @@ footer {
     background-color: getColor(accent1);
 
     .logo {
+        width: fit-content;
+        height: fit-content;
+
         img {
             width: 60px;
         }
@@ -40,62 +43,130 @@ footer {
 }
 
 header {
-
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-
     nav#nav {
-        min-width: 400px;
+        width: 100%;
         position: relative;
+        display: flex;
+        flex-flow: row nowrap;
 
-
-        ul {
+        ul.navLinks {
             position: relative;
-            top: 50%;
-            transform: translateY(-50%);
-
             width: inherit;
             display: flex;
-            justify-content: space-evenly;
+            justify-content: stretch;
 
-            li.navBtn {
-                padding: $padding;
-                margin: $margin;
+            li a.navLink {
+                padding: $padding * 2;
+                display: block;
+                box-sizing: border-box;
+            }
+        }
+
+        div.search {
+            align-self: center;
+            height: 50%;
+            min-width: 80px;
+            min-height: 30px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-end;
+    
+            input#searchBar {
+                padding: $padding / 2;
+                margin: 0 $margin / 4;
+            }
+        }
+    
+        button#shoppingCartBtn {
+            height: 100%;
+            min-height: 40px;
+            min-width: 50px;
+            align-self: center;
+        }
+    }
+
+    article.hero {
+        background: getColor(primary);
+        min-height: 300px;
+        position: relative;
+    }
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+
+    height: fit-content;
+
+    aside.aside {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        margin: $margin / 2;
+        padding: $padding / 4;
+        border: $border-width solid getColor(accent2);
+        height: fit-content;
+
+        section.sidebar {
+            height: fit-content;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: space-between;
+            padding: $padding;
+
+            button {
+                font-size: 1.1em;
+                padding: $padding $padding * 2;
+            }
+
+            ul.links {
+                min-height: 100px;
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: space-evenly;
             }
         }
     }
 
-    div.search {
-        align-self: center;
-        height: 50%;
-        min-width: 80px;
-        min-height: 30px;
+    section#content.content{
+        padding: $padding;
 
-        input#searchBar {
-            padding: $padding / 2;
+        display: grid;
+
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+
+        figure.productCard {
+            background: getColor(accent2);
+            position: relative;
+
+            a {
+                display: block;
+                min-width: 200px;
+                min-height: 200px;
+                width: 100%; height: 100%;
+                padding: $padding * 2;
+                text-decoration: none;
+                box-sizing: border-box;
+
+                img.productImage {
+                    width: 100%;
+                    height: 50%;
+                    margin: auto;
+                }
+
+                div{
+                    display: flex;
+                    justify-content: space-between;
+
+                    figcaption {
+                        padding: $padding / 2;
+                    }
+                }
+            }
         }
-
-        button#searchBtn {
-            height: 100%;
-        }
     }
 
-    button#shoppingCartBtn {
-        height: 100%;
-        min-height: 40px;
-        min-width: 50px;
-        align-self: center;
-    }
-}
-
-aside.aside
-{
-    width
-    section.sidebar
-    {
-
-    }
 }
 
 footer {

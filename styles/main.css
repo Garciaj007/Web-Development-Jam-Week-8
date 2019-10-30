@@ -17,69 +17,198 @@ footer {
   background-color: #0065C4;
 }
 
+header .logo,
+footer .logo {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 header .logo img,
 footer .logo img {
   width: 60px;
 }
 
-header {
+header nav#nav {
+  width: 100%;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
 }
 
-header nav#nav {
-  min-width: 400px;
+header nav#nav ul.navLinks {
   position: relative;
-}
-
-header nav#nav ul {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
   width: inherit;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
 }
 
-header nav#nav ul li.navBtn {
-  padding: 0.4em;
-  margin: 0.8em;
+header nav#nav ul.navLinks li a.navLink {
+  padding: 0.8em;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-header div.search {
+header nav#nav div.search {
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
       align-self: center;
   height: 50%;
   min-width: 80px;
   min-height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
-header div.search input#searchBar {
+header nav#nav div.search input#searchBar {
   padding: 0.2em;
+  margin: 0 0.2em;
 }
 
-header div.search button#searchBtn {
-  height: 100%;
-}
-
-header button#shoppingCartBtn {
+header nav#nav button#shoppingCartBtn {
   height: 100%;
   min-height: 40px;
   min-width: 50px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+header article.hero {
+  background: #FCFCFC;
+  min-height: 300px;
+  position: relative;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 4fr;
+      grid-template-columns: 1fr 4fr;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+main aside.aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 0.4em;
+  padding: 0.1em;
+  border: 0.1em solid #59D6BD;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+main aside.aside section.sidebar {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.4em;
+}
+
+main aside.aside section.sidebar button {
+  font-size: 1.1em;
+  padding: 0.4em 0.8em;
+}
+
+main aside.aside section.sidebar ul.links {
+  min-height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main section#content.content {
+  padding: 0.4em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+}
+
+main section#content.content figure.productCard {
+  background: #59D6BD;
+  position: relative;
+}
+
+main section#content.content figure.productCard a {
+  display: block;
+  min-width: 200px;
+  min-height: 200px;
+  width: 100%;
+  height: 100%;
+  padding: 0.8em;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main section#content.content figure.productCard a img.productImage {
+  width: 100%;
+  height: 50%;
+  margin: auto;
+}
+
+main section#content.content figure.productCard a div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main section#content.content figure.productCard a div figcaption {
+  padding: 0.2em;
 }
 
 footer {

@@ -145,113 +145,116 @@
 <body>
 
     <header>
-        <div class="logo">
-            <img src="images/codejamlogo.jpg" alt="the logo">
-        </div>
         <nav id="nav">
-            <ul>
-                <li><a href="#" id="homeBtn" class="navBtn">Home</a></li>
-                <li><a href="#" id="merchBtn" class="navBtn">Merchandise</a></li>
-                <li><a href="#" id="contactsBtn" class="navBtn">Contacts</a></li>
+            <div class="logo">
+                <img src="images/codejamlogo.jpg" alt="the logo">
+            </div>
+            <ul class="navLinks">
+                <li><a href="#" id="homeBtn" class="navLink">Home</a></li>
+                <li><a href="#" id="merchBtn" class="navLink">Merchandise</a></li>
+                <li><a href="#" id="contactsBtn" class="navLink">Contacts</a></li>
             </ul>
+            <div class="search">
+                <input type="text" name="search" id="searchBar" />
+                <button id="searchBtn"><i class="fas fa-search"></i></button>
+            </div>
+            <button id="shoppingCartBtn"><i class="fas fa-shopping-cart"></i></button>
         </nav>
-        <div class="search">
-            <input type="text" name="search" id="searchBar" />
-            <button id="searchBtn"><i class="fas fa-search"></i></button>
-        </div>
-        <button id="shoppingCartBtn"><i class="fas fa-shopping-cart"></i></button>
+
+        <article class="hero">
+                <div class="slideshow-container">
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">1 / 3</div>
+                            <img src="images/tshirt-black.png" style="width:100%">
+                            <div class="text">Caption Text</div>
+                        </div>
+                
+                        <div class="mySlides fade">
+                            <div class="numbertext">2 / 3</div>
+                            <img src="img2.jpg" style="width:100%">
+                            <div class="text">Caption Two</div>
+                        </div>
+                
+                        <div class="mySlides fade">
+                            <div class="numbertext">3 / 3</div>
+                            <img src="img3.jpg" style="width:100%">
+                            <div class="text">Caption Three</div>
+                        </div>
+                
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+                
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+        </article>
     </header>
 
-    <aside class="aside">
-        <section class="sidebar" id="acessoriesSidebar">
-            <button id="btn">Clothing</button>
-                <ul class="links">
-                    <li><a href="#">link1</a></li>
-                    <li><a href="#">link2</a></li>
-                    <li><a href="#">link3</a></li>
-                </ul>
-        </section>
-        <section class="sidebar" id="acessoriesSidebar">
-            <button id="btn">Accessories</button>
-                <ul class="links">
-                    <li><a href="#">link1</a></li>
-                    <li><a href="#">link2</a></li>
-                    <li><a href="#">link3</a></li>
-                </ul>
-        </section>
-
-        <section class="sidebar" id="accessoriesSidebar">
-            <button id="btn">Shoes</button>
-                <ul class="links">
-                    <li><a href="#">link1</a></li>
-                    <li><a href="#">link2</a></li>
-                    <li><a href="#">link3</a></li>
-                </ul>
-        </section>
-
-        <section class="sidebar" id="acessoriesSidebar">
-            <button id="btn">Gender</button>
-                <ul class="links">
-                    <li><a href="#">link1</a></li>
-                    <li><a href="#">link2</a></li>
-                    <li><a href="#">link3</a></li>
-                </ul>
-        </section>
-
-        <section class="sidebar" id="acessoriesSidebar">
-            <button id="btn">Pricing</button>
-                <ul class="links">
-                    <li><a href="#">link1</a></li>
-                    <li><a href="#">link2</a></li>
-                    <li><a href="#">link3</a></li>
-                </ul>
-        </section>
-    </aside>
-
     <main>
-        <article class="productCard">
-            <figure>
-                <img class="productImage" href="#" alt="lorem ipsum" />
-                <figcaption class="productPrice">$0.00</figcaption>
-                <figcaption class="productTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit</figcaption>
+        <aside class="aside">
+            <section class="sidebar" id="acessoriesSidebar">
+                <button id="btn">Clothing</button>
+                <ul class="links">
+                    <li><a href="#">link1</a></li>
+                    <li><a href="#">link2</a></li>
+                    <li><a href="#">link3</a></li>
+                </ul>
+            </section>
+            <section class="sidebar" id="acessoriesSidebar">
+                <button id="btn">Accessories</button>
+                <ul class="links">
+                    <li><a href="#">link1</a></li>
+                    <li><a href="#">link2</a></li>
+                    <li><a href="#">link3</a></li>
+                </ul>
+            </section>
+
+            <section class="sidebar" id="accessoriesSidebar">
+                <button id="btn">Shoes</button>
+                <ul class="links">
+                    <li><a href="#">link1</a></li>
+                    <li><a href="#">link2</a></li>
+                    <li><a href="#">link3</a></li>
+                </ul>
+            </section>
+
+            <section class="sidebar" id="acessoriesSidebar">
+                <button id="btn">Gender</button>
+                <ul class="links">
+                    <li><a href="#">link1</a></li>
+                    <li><a href="#">link2</a></li>
+                    <li><a href="#">link3</a></li>
+                </ul>
+            </section>
+
+            <section class="sidebar" id="acessoriesSidebar">
+                <button id="btn">Pricing</button>
+                <ul class="links">
+                    <li><a href="#">link1</a></li>
+                    <li><a href="#">link2</a></li>
+                    <li><a href="#">link3</a></li>
+                </ul>
+            </section>
+        </aside>
+
+        <section id="content" class="content">
+            <figure class="productCard">
+                <a href="#">
+                    <img class="productImage" src="images/tshirt-black.png" alt="lorem ipsum" />
+                    <div>
+                        <figcaption class="productPrice">$0.00</figcaption>
+                        <figcaption class="productTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        </figcaption>
+                    </div>
+                </a>
             </figure>
-        </article>
+        </section>
     </main>
-
-    <!-- Slide Show -->
-    <div class="slideshow-container">
-
-        <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-            <img src="img1.jpg" style="width:100%">
-            <div class="text">Caption Text</div>
-        </div>
-
-        <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img src="img2.jpg" style="width:100%">
-            <div class="text">Caption Two</div>
-        </div>
-
-        <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="img3.jpg" style="width:100%">
-            <div class="text">Caption Three</div>
-        </div>
-
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-    </div>
-    <br>
-
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-
-    <!-- slices show end -->
 
     <footer>
         <div class="logo">
@@ -298,39 +301,39 @@
             </div>
         </section>
     </footer>
-    
+
     <script>
-            var slideIndex = 1;
-            showSlides(slideIndex);
-    
-            function plusSlides(n) {
-                showSlides(slideIndex += n);
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
             }
-    
-            function currentSlide(n) {
-                showSlides(slideIndex = n);
+            if (n < 1) {
+                slideIndex = slides.length
             }
-    
-            function showSlides(n) {
-                var i;
-                var slides = document.getElementsByClassName("mySlides");
-                var dots = document.getElementsByClassName("dot");
-                if (n > slides.length) {
-                    slideIndex = 1
-                }
-                if (n < 1) {
-                    slideIndex = slides.length
-                }
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                }
-                slides[slideIndex - 1].style.display = "block";
-                dots[slideIndex - 1].className += " active";
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
             }
-        </script>
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
 
 </body>
 
