@@ -8,10 +8,14 @@ body {
   width: 100%;
   height: 100%;
   background-color: #FCFCFC;
-  position: relative;                   font-family: 'Abril Fatface', cursive;
+  position: relative;
+  font-family: 'Nanum Gothic', sans-serif;
 }
-.alt-type{
-    font-family: 'Nanum Gothic', sans-serif;
+
+.alt-type, h1,
+h2,
+h3 {
+  font-family: 'Abril Fatface', cursive;
 }
 
 html,
@@ -24,12 +28,6 @@ a {
 a {
   text-decoration: none;
   display: block;
-}
-
-h1,
-h2,
-h3 {
-
 }
 
 h1 {
@@ -77,6 +75,7 @@ footer div.logo {
   width: 100%;
   height: 100%;
   position: relative;
+  margin: auto 0;
 }
 
 header div.logo a.img-nav-link,
@@ -93,13 +92,15 @@ footer div.logo a.img-nav-link {
 
 header div.logo a.img-nav-link img,
 footer div.logo a.img-nav-link img {
-  width: 40pt;
+  width: 30pt;
 }
 
 header nav#nav {
   width: inherit;
   padding: 0.6rem;
-  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
@@ -125,9 +126,12 @@ header nav#nav div.left-bar div.search {
 header nav#nav div.left-bar button#shopping-cart-btn {
   width: 100%;
   height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 header nav#nav div.left-bar button#shopping-cart-btn i {
+  display: block;
   font-size: 1.3rem;
 }
 
@@ -531,8 +535,7 @@ footer p.footer-description {
     margin: 0 0.2rem;
   }
   header nav#nav div.left-bar button#shopping-cart-btn {
-    width: 10%;
-      height:15%;
+    margin: 0 0.8rem;
   }
   header article.hero {
     background: #FCFCFC;
