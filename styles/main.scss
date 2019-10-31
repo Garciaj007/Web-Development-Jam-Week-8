@@ -511,13 +511,6 @@ footer {
                     font-size: 1.1em;
                     padding: $padding $padding * 2;
                 }
-
-                ul.links {
-                    min-height: 100px;
-                    display: flex;
-                    flex-flow: column nowrap;
-                    justify-content: space-evenly;
-                }
             }
         }
 
