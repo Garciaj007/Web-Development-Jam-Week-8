@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 
 <head runat="server">
     <meta charset="UTF-8">
@@ -24,16 +24,16 @@
                 </a>
             </div>
             <ul class="nav-links">
-                <li><a href="#" id="home-btn" class="nav-link">Home</a></li>
-                <li><a href="#" id="merch-btn" class="nav-link">Merchandise</a></li>
-                <li><a href="#" id="contacts-btn" class="nav-link">Contacts</a></li>
+                <li id="home-btn"><a href="#" id="home-btn" class="nav-link">Home</a></li>
+                <li id="merch-btn"><a href="#" id="merch-btn" class="nav-link">Merchandise</a></li>
+                <li id="contacts-btn"><a href="#" id="contacts-btn" class="nav-link">Contacts</a></li>
             </ul>
             <div class="left-bar">
                 <div class="search">
                     <input type="text" name="search" id="search-bar" />
-                    <button id="search-btn"><i class="fas fa-search"></i></button>
+                    <button id="search-btn" alt="search"><i class="fas fa-search"></i></button>
                 </div>
-                <button id="shopping-cart-btn"><i class="fas fa-shopping-cart"></i></button>
+                <button id="shopping-cart-btn" alt="shopping cart"><i class="fas fa-shopping-cart"></i></button>
             </div>
         </nav>
 
@@ -86,11 +86,60 @@
     <main>
         <aside class="aside">
             <section class="sidebar" id="clothing-sidebar">
-                <button class="sidebar-btn section-btn">Clothing</button>
+                <button class="sidebar-btn section-btn">
+                    <h3>Clothing</h3>
+                </button>
                 <ul class="sidebar-links links">
-                    <li><a href="#">link1</a></li>
-                    <li><a href="#">link2</a></li>
-                    <li><a href="#">link3</a></li>
+                    <li><a href="#">Shirts</a></li>
+                    <li><a href="#">Pants</a></li>
+                    <li><a href="#">Dresses</a></li>
+                    <li><a href="#">Swimware</a></li>
+                </ul>
+            </section>
+
+            <section class="sidebar" id="accessories-sidebar">
+                <button class="sidebar-btn section-btn">
+                    <h3>Accessories</h3>
+                </button>
+                <ul class="sidebar-links links">
+                    <li><a href="#">Belts</a></li>
+                    <li><a href="#">Electronics</a></li>
+                    <li><a href="#">Handbags</a></li>
+                    <li><a href="#">Umbrellas</a></li>
+                    <li><a href="#">Jewelry</a></li>
+                </ul>
+            </section>
+
+            <section class="sidebar" id="shoes-sidebar">
+                <button class="sidebar-btn section-btn">
+                    <h3>Shoes</h3>
+                </button>
+                <ul class="sidebar-links links">
+                    <li><a href="#">Boots</a></li>
+                    <li><a href="#">Heals</a></li>
+                    <li><a href="#">Casual</a></li>
+                </ul>
+            </section>
+
+            <section class="sidebar" id="gender-sidebar">
+                <button class="sidebar-btn section-btn">
+                    <h3>Gender</h3>
+                </button>
+                <ul class="sidebar-links links">
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Woman</a></li>
+                    <li><a href="#">Kids</a></li>
+                </ul>
+            </section>
+
+            <section class="sidebar" id="pricing-sidebar">
+                <button class="sidebar-btn section-btn">
+                    <h3>Pricing</h3>
+                </button>
+                <ul class="sidebar-links links">
+                    <li><a href="#">Highest First</a></li>
+                    <li><a href="#">Lowest First</a></li>
+                    <li><a href="#">Free Shipping</a></li>
                 </ul>
             </section>
         </aside>
@@ -108,44 +157,117 @@
                     </div>
                 </a>
             </figure>
+
+            <figure class="product-card">
+                <a href="#">
+                    <div class="product-img-container">
+                        <img class="product-image" src="images/tshirt-black.png" alt="lorem ipsum" />
+                    </div>
+                    <div>
+                        <figcaption class="product-price">$0.00</figcaption>
+                        <figcaption class="product-title">Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        </figcaption>
+                    </div>
+                </a>
+            </figure>
+
+            <figure class="product-card">
+                <a href="#">
+                    <div class="product-img-container">
+                        <img class="product-image" src="images/tshirt-black.png" alt="lorem ipsum" />
+                    </div>
+                    <div>
+                        <figcaption class="product-price">$0.00</figcaption>
+                        <figcaption class="product-title">Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        </figcaption>
+                    </div>
+                </a>
+            </figure>
         </section>
     </main>
 
     <footer>
-        <div class="logo">
-            <a href="#" class="nav-link img-nav-link">
-                <img src="images/codejamlogo.jpg" alt="the logo">
-            </a>
-        </div>
         <section id="footer-links">
-
             <section class="footer-links-container">
                 <button class="footer-links-btn section-btn">
                     <h3>Clothing</h3>
                 </button>
                 <ul class="footer-links links">
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
+                        <li><a href="#">Shirts</a></li>
+                        <li><a href="#">Pants</a></li>
+                        <li><a href="#">Dresses</a></li>
+                        <li><a href="#">Swimware</a></li>
                 </ul>
             </section>
 
+            <section class="footer-links-container">
+                <button class="footer-links-btn section-btn">
+                    <h3>Accessories</h3>
+                </button>
+                <ul class="footer-links links">
+                        <li><a href="#">Belts</a></li>
+                        <li><a href="#">Electronics</a></li>
+                        <li><a href="#">Handbags</a></li>
+                        <li><a href="#">Umbrellas</a></li>
+                        <li><a href="#">Jewelry</a></li>
+                </ul>
+            </section>
 
+            <section class="footer-links-container">
+                <button class="footer-links-btn section-btn">
+                    <h3>Shoes</h3>
+                </button>
+                <ul class="footer-links links">
+                        <li><a href="#">Boots</a></li>
+                        <li><a href="#">Heals</a></li>
+                        <li><a href="#">Casual</a></li>
+                </ul>
+            </section>
+
+            <section class="footer-links-container">
+                <button class="footer-links-btn section-btn">
+                    <h3>Gender</h3>
+                </button>
+                <ul class="footer-links links">
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Woman</a></li>
+                        <li><a href="#">Kids</a></li>
+                </ul>
+            </section>
+
+            <section class="footer-links-container">
+                <button class="footer-links-btn section-btn">
+                    <h3>Pricing</h3>
+                </button>
+                <ul class="footer-links links">
+                        <li><a href="#">Highest First</a></li>
+                        <li><a href="#">Lowest First</a></li>
+                        <li><a href="#">Free Shipping</a></li>
+                </ul>
+            </section>
         </section>
+
         <section id="social-media">
             <div>
-                <img href="#" />
-                <p>Instagram</p>
+                <p><i id="footer-ins" class="fab fa-instagram"></i><span>Instagram</span></p>
             </div>
             <div>
-                <img href="#" />
-                <p>Twitter</p>
+                <p><i id="footer-twitter" class="fab fa-twitter-square"></i><span>Twitter</span></p>
             </div>
             <div>
-                <img href="#" />
-                <p>Facebook</p>
+                <p><i id="footer-facebook" class="fab fa-facebook-square"></i><span>Facebook</span></p>
             </div>
         </section>
+
+        <p class="footer-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate dolorum
+            omnis dolores provident voluptates maiores quibusdam nobis illo atque, quod mollitia! Fuga magnam ducimus
+            unde nulla dolorem repellendus deleniti non?</p>
+
+        <div class="logo">
+            <a href="#" class="nav-link img-nav-link">
+                <img src="images/codejamlogo.jpg" alt="the logo">
+            </a>
+        </div>
     </footer>
 
     <script>
