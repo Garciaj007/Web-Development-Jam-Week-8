@@ -65,6 +65,10 @@ a {
     font-size: $base-font-size;
 }
 
+img {
+    vertical-align: middle;
+}
+
 button {
     box-sizing: border-box;
     padding: $padding / 2 $padding;
@@ -186,20 +190,28 @@ main {
 footer {
     display: flex;
     justify-content: space-around;
+    flex-flow: column-reverse;
 
     section#links {
         display: flex;
+        flex-flow: column;
         justify-content: space-between;
     }
+}
+
+.section-btn {
+    border: solid $border-width getColor(secondary);
+    margin: $margin / 2 $margin; 
+}
+
+.links {
+    padding: $padding;
 }
 
 .my-slides {
     display: none;
 }
 
-img {
-    vertical-align: middle;
-}
 
 /* Slideshow container */
 .slideshow-container {
