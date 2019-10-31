@@ -46,6 +46,10 @@ a {
   font-size: 0.9rem;
 }
 
+img {
+  vertical-align: middle;
+}
+
 button {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -200,23 +204,36 @@ footer {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: column-reverse;
+          flex-flow: column-reverse;
 }
 
 footer section#links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.my-slides {
-  display: none;
+.section-btn {
+  border: solid 0.1rem #232323;
+  margin: 0.4rem 0.8rem;
 }
 
-img {
-  vertical-align: middle;
+.links {
+  padding: 0.6rem;
+}
+
+.my-slides {
+  display: none;
 }
 
 /* Slideshow container */
