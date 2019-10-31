@@ -8,6 +8,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: #FCFCFC;
+  position: relative;
 }
 
 html,
@@ -19,6 +20,7 @@ a {
 
 a {
   text-decoration: none;
+  display: block;
 }
 
 h1,
@@ -32,11 +34,11 @@ h1 {
 }
 
 h2 {
-  font-size: 2.25rem;
+  font-size: 1.8rem;
 }
 
 h3 {
-  font-size: 1.8rem;
+  font-size: 1.35rem;
 }
 
 div,
@@ -51,28 +53,44 @@ img {
 }
 
 button {
+  width: 100%;
+  height: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0.3rem 0.6rem;
   margin: 0;
-  background-color: #0065C4;
-  border: 0.1rem solid #0065C4;
+  background-color: #6800f0;
+  border: 0.1rem solid #6800f0;
+  text-align: left;
 }
 
 header,
 footer {
   width: 100%;
-  background-color: #0065C4;
+  background-color: #6800f0;
 }
 
-header .logo,
-footer .logo {
+header div.logo,
+footer div.logo {
   width: 100%;
   height: 100%;
+  position: relative;
 }
 
-header .logo img,
-footer .logo img {
+header div.logo a.img-nav-link,
+footer div.logo a.img-nav-link {
+  display: block;
+  position: inherit;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+header div.logo a.img-nav-link img,
+footer div.logo a.img-nav-link img {
   width: 40pt;
 }
 
@@ -132,19 +150,24 @@ main aside.aside {
 }
 
 main section#content.content {
-  width: 100vw;
-  height: 100vw;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 2.4rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  padding-top: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(400pt, 2fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(400pt, 2fr));
 }
 
 main section#content.content figure.product-card {
-  background: #59D6BD;
+  margin: 0.8rem;
   position: relative;
+  background-color: #59D6BD;
 }
 
 main section#content.content figure.product-card a {
@@ -202,15 +225,26 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-flow: column-reverse;
-          flex-flow: column-reverse;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  padding: 0.6rem;
 }
 
-footer section#links {
+footer div.logo {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0.8rem auto;
+}
+
+footer section#footer-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -221,15 +255,70 @@ footer section#links {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 0.3rem;
 }
 
-.section-btn {
-  border: solid 0.1rem #232323;
-  margin: 0.4rem 0.8rem;
+footer section#social-media {
+  width: 50%;
+  margin: 0.8rem auto;
+  min-width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer section#social-media div p {
+  font-size: 1.8rem;
+}
+
+footer section#social-media div p span {
+  display: none;
+}
+
+footer p.footer-description {
+  margin: 0 0.8rem;
+  text-align: center;
 }
 
 .links {
-  padding: 0.6rem;
+  margin-left: 0.8rem;
+  display: none;
+}
+
+.links li {
+  margin: 0.4rem 0;
+}
+
+.section-btn {
+  border: solid 0.1rem #6800f0;
+  position: relative;
+}
+
+.section-btn:before {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  left: 12pt;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 1.08rem;
+}
+
+.section-btn h3 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: right;
+}
+
+.links {
+  padding: 0.3rem;
+}
+
+.links li {
+  text-decoration: underline;
 }
 
 .my-slides {
@@ -446,6 +535,138 @@ footer section#links {
     background: #FCFCFC;
     min-height: 300px;
     position: relative;
+  }
+  main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 2fr;
+        grid-template-columns: 1fr 2fr;
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  main aside.aside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin: 0.4rem;
+    padding: 0.15rem;
+    border: 0.1rem solid #59D6BD;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  main aside.aside section.sidebar {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0.6rem;
+  }
+  main aside.aside section.sidebar button {
+    font-size: 1.1em;
+    padding: 0.6rem 1.2rem;
+  }
+  main aside.aside section.sidebar ul.links {
+    min-height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  main section#content.content {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 2.4rem;
+    padding-top: 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(400pt, 2fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(400pt, 2fr));
+  }
+  main section#content.content figure.product-card {
+    margin: 0.8rem;
+    position: relative;
+    background-color: #59D6BD;
+  }
+  main section#content.content figure.product-card a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 1.2rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  main section#content.content figure.product-card a div.product-img-container {
+    width: 100%;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  main section#content.content figure.product-card a div.product-img-container img.product-image {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  main section#content.content figure.product-card a div {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main section#content.content figure.product-card a div figcaption {
+    padding: 0.3rem;
+  }
+  main section#content.content {
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
 }
 /*# sourceMappingURL=main.css.map */

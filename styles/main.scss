@@ -8,7 +8,7 @@ $icon-size: 1.3rem;
 $base-font-size: 0.9rem;
 $mobile-base-font-size: 0.6rem;
 
-$colors: (primary: #FCFCFC, secondary: #232323, accent1: #0065C4, accent2: #59D6BD);
+$colors: (primary: #FCFCFC, secondary: #232323, accent1: rgb(104, 0, 240), accent2: #59D6BD);
 
 @function getColor($color) {
     @return map-get($map: $colors, $key: $color);
@@ -27,6 +27,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: getColor(primary);
+    position: relative;
 }
 
 html,
@@ -38,6 +39,7 @@ a {
 
 a {
     text-decoration: none;
+    display: block;
 }
 
 h1,
@@ -51,11 +53,11 @@ h1 {
 }
 
 h2 {
-    font-size: $base-font-size * 2.5;
+    font-size: $base-font-size * 2;
 }
 
 h3 {
-    font-size: $base-font-size * 2
+    font-size: $base-font-size * 1.5;
 }
 
 div,
@@ -70,11 +72,14 @@ img {
 }
 
 button {
+    width: 100%;
+    height: 100%;
     box-sizing: border-box;
     padding: $padding / 2 $padding;
     margin: 0;
     background-color: getColor(accent1);
     border: $border-width solid getColor(accent1);
+    text-align: left;
 }
 
 button:hover {}
@@ -84,12 +89,21 @@ footer {
     width: 100%;
     background-color: getColor(accent1);
 
-    .logo {
+    div.logo {
         width: 100%;
         height: 100%;
+        position: relative;
 
-        img {
-            width: 40pt;
+        a.img-nav-link {
+            display: block;
+            position: inherit;
+            width: fit-content;
+            height: fit-content;
+
+            img {
+                width: 40pt;
+            }
+
         }
     }
 }
@@ -142,36 +156,44 @@ main {
     }
 
     section#content.content {
-        width: 100vw; height: 100vw;
+        width: 100%;
+        height: fit-content;
         box-sizing: border-box;
         padding: $padding * 4;
-        display: flex;
+        padding-top: 0;
 
+        display: grid;
+        grid-template-columns: repeat( auto-fill, minmax(400pt, 2fr));
+    
         figure.product-card {
-            background: getColor(accent2);
+            margin: $margin;
+
             position: relative;
+            background-color: getColor(accent2);
 
             a {
                 display: flex;
                 flex-flow: column nowrap;
                 justify-content: center;
                 align-items: center;
+
                 width: 100%;
                 height: 100%;
                 padding: $padding * 2;
                 box-sizing: border-box;
 
-                div.product-img-container{
-                    width: 100%; height: 100%;
+                div.product-img-container {
+                    width: 100%;
+                    height: 100%;
                     box-sizing: border-box;
 
                     img.product-image {
-                        width: 100%; height: 100%;
+                        width: 100%;
+                        height: 100%;
                         object-fit: contain;
                     }
                 }
 
-                
 
                 div {
                     flex: 1 1 auto;
@@ -189,23 +211,82 @@ main {
 
 footer {
     display: flex;
+    box-sizing: border-box;
     justify-content: space-around;
-    flex-flow: column-reverse;
+    flex-flow: column;
+    padding: $padding;
 
-    section#links {
+    div.logo {
+        position: relative;
+        width: fit-content;
+        margin: $margin auto;
+    }
+
+    section#footer-links {
         display: flex;
         flex-flow: column;
         justify-content: space-between;
+        padding: $padding / 2;
+    }
+
+    section#social-media {
+        width: 50%;
+        margin: $margin auto;
+        min-width: 100px;
+        display: flex;
+        justify-content: space-evenly;
+
+        div {
+            p {
+                font-size: $base-font-size * 2;
+
+                span {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    p.footer-description {
+        margin: 0 $margin;
+        text-align: center;
+    }
+}
+
+.links {
+    margin-left: $margin;
+    display: none;
+
+    li {
+        margin: $margin / 2 0;
     }
 }
 
 .section-btn {
-    border: solid $border-width getColor(secondary);
-    margin: $margin / 2 $margin; 
+    border: solid $border-width getColor(accent1);
+    position: relative;
+
+    &:before {
+        content: "+";
+        position: absolute;
+        top: 50%;
+        left: 12pt;
+        transform: translateY(-50%);
+        font-size: $base-font-size * 1.2;
+    }
+
+    h3 {
+        box-sizing: border-box;
+        text-align: right;
+    }
 }
 
 .links {
-    padding: $padding;
+    padding: $padding / 2;
+
+    li {
+        text-decoration: underline;
+    }
 }
 
 .my-slides {
@@ -402,4 +483,104 @@ footer {
             position: relative;
         }
     }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+
+        width: 100%;
+        height: fit-content;
+
+        aside.aside {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: space-evenly;
+            margin: $margin / 2;
+            padding: $padding / 4;
+            border: $border-width solid getColor(accent2);
+            height: fit-content;
+
+            section.sidebar {
+                height: fit-content;
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: space-between;
+                padding: $padding;
+
+                button {
+                    font-size: 1.1em;
+                    padding: $padding $padding * 2;
+                }
+
+                ul.links {
+                    min-height: 100px;
+                    display: flex;
+                    flex-flow: column nowrap;
+                    justify-content: space-evenly;
+                }
+            }
+        }
+
+        section#content.content {
+            width: 100%;
+            height: fit-content;
+            box-sizing: border-box;
+            padding: $padding * 4;
+            padding-top: 0;
+    
+            display: grid;
+            grid-template-columns: repeat( auto-fill, minmax(400pt, 2fr));
+        
+            figure.product-card {
+                margin: $margin;
+    
+                position: relative;
+                background-color: getColor(accent2);
+    
+                a {
+                    display: flex;
+                    flex-flow: column nowrap;
+                    justify-content: center;
+                    align-items: center;
+    
+                    width: 100%;
+                    height: 100%;
+                    padding: $padding * 2;
+                    box-sizing: border-box;
+    
+                    div.product-img-container {
+                        width: 100%;
+                        height: 100%;
+                        box-sizing: border-box;
+    
+                        img.product-image {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                        }
+                    }
+    
+    
+                    div {
+                        flex: 1 1 auto;
+                        display: flex;
+                        justify-content: space-between;
+    
+                        figcaption {
+                            padding: $padding / 2;
+                        }
+                    }
+                }
+            }
+        }
+
+        section#content.content {
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    
 }

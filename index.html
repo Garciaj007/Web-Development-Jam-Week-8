@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 
 <head runat="server">
     <meta charset="UTF-8">
@@ -31,9 +31,9 @@
             <div class="left-bar">
                 <div class="search">
                     <input type="text" name="search" id="search-bar" />
-                    <button id="search-btn"><i class="fas fa-search"></i></button>
+                    <button id="search-btn" alt="search"><i class="fas fa-search"></i></button>
                 </div>
-                <button id="shopping-cart-btn"><i class="fas fa-shopping-cart"></i></button>
+                <button id="shopping-cart-btn" alt="shopping cart"><i class="fas fa-shopping-cart"></i></button>
             </div>
         </nav>
 
@@ -86,7 +86,9 @@
     <main>
         <aside class="aside">
             <section class="sidebar" id="clothing-sidebar">
-                <button class="sidebar-btn section-btn">Clothing</button>
+                <button class="sidebar-btn section-btn">
+                    <h3>Clothing</h3>
+                </button>
                 <ul class="sidebar-links links">
                     <li><a href="#">link1</a></li>
                     <li><a href="#">link2</a></li>
@@ -108,17 +110,37 @@
                     </div>
                 </a>
             </figure>
+
+            <figure class="product-card">
+                    <a href="#">
+                        <div class="product-img-container">
+                            <img class="product-image" src="images/tshirt-black.png" alt="lorem ipsum" />
+                        </div>
+                        <div>
+                            <figcaption class="product-price">$0.00</figcaption>
+                            <figcaption class="product-title">Lorem ipsum dolor sit amet consectetur adipisicing elit
+                            </figcaption>
+                        </div>
+                    </a>
+                </figure>
+
+                <figure class="product-card">
+                        <a href="#">
+                            <div class="product-img-container">
+                                <img class="product-image" src="images/tshirt-black.png" alt="lorem ipsum" />
+                            </div>
+                            <div>
+                                <figcaption class="product-price">$0.00</figcaption>
+                                <figcaption class="product-title">Lorem ipsum dolor sit amet consectetur adipisicing elit
+                                </figcaption>
+                            </div>
+                        </a>
+                    </figure>
         </section>
     </main>
 
     <footer>
-        <div class="logo">
-            <a href="#" class="nav-link img-nav-link">
-                <img src="images/codejamlogo.jpg" alt="the logo">
-            </a>
-        </div>
         <section id="footer-links">
-
             <section class="footer-links-container">
                 <button class="footer-links-btn section-btn">
                     <h3>Clothing</h3>
@@ -129,23 +151,29 @@
                     <li><a href="#">Link</a></li>
                 </ul>
             </section>
-
-
         </section>
+
         <section id="social-media">
             <div>
-                <img href="#" />
-                <p>Instagram</p>
+                <p><i class="fab fa-instagram"></i><span>Instagram</span></p>
             </div>
             <div>
-                <img href="#" />
-                <p>Twitter</p>
+                <p><i class="fab fa-twitter-square"></i><span>Twitter</span></p>
             </div>
             <div>
-                <img href="#" />
-                <p>Facebook</p>
+                <p><i class="fab fa-facebook-square"></i><span>Facebook</span></p>
             </div>
         </section>
+
+        <p class="footer-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate dolorum
+            omnis dolores provident voluptates maiores quibusdam nobis illo atque, quod mollitia! Fuga magnam ducimus
+            unde nulla dolorem repellendus deleniti non?</p>
+
+        <div class="logo">
+            <a href="#" class="nav-link img-nav-link">
+                <img src="images/codejamlogo.jpg" alt="the logo">
+            </a>
+        </div>
     </footer>
 
     <script>
