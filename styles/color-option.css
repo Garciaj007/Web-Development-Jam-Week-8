@@ -13,6 +13,7 @@ body{
 }
 
 #showcase{
+    position: relative;
 	width: 30%;
 	
 
@@ -20,6 +21,7 @@ body{
 }
 
 #order{
+    position: relative;
     width: 30%;
     float: right;
 }
