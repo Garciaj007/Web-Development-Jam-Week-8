@@ -8,6 +8,7 @@
     <title>Home</title>
     <link href="styles/bittsreset.css" rel="stylesheet" type="text/css" />
     <link href="styles/main.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Nanum+Gothic&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet"
         type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto&display=swap" rel="stylesheet">
@@ -24,9 +25,9 @@
                 </a>
             </div>
             <ul class="nav-links">
-                <li><a href="#" id="home-btn" class="nav-link">Home</a></li>
-                <li><a href="#" id="merch-btn" class="nav-link">Merchandise</a></li>
-                <li><a href="#" id="contacts-btn" class="nav-link">Contacts</a></li>
+                <li id="home-btn"><a href="#" id="home-btn" class="nav-link">Home</a></li>
+                <li id="merch-btn"><a href="#" id="merch-btn" class="nav-link">Merchandise</a></li>
+                <li id="contacts-btn"><a href="#" id="contacts-btn" class="nav-link">Contacts</a></li>
             </ul>
             <div class="left-bar">
                 <div class="search">
@@ -43,7 +44,8 @@
             <div class="slideshow-container">
 
                 <div class="my-slides fade">
-                    <img src="images/tshirt-black.png" style="width:100%" class="hero-img">
+                    <img src="images2/womanbanner2.jpg" style="width:100%" class="hero-img">
+                    <div class="hero-bg"></div>
                     <div class="hero-text-container">
                         <h1 class="hero-title">Title1</h1>
                         <p class="hero-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque
@@ -52,7 +54,8 @@
                 </div>
 
                 <div class="my-slides fade">
-                    <img src="images/tshirt-black.png" style="width:100%" class="hero-img">
+                    <img src="images2/manbanner2.jpg" style="width:100%" class="hero-img">
+                    <div class="hero-bg"></div>
                     <div class="hero-text-container">
                         <h1 class="hero-title">Title1</h1>
                         <p class="hero-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque
@@ -61,7 +64,8 @@
                 </div>
 
                 <div class="my-slides fade">
-                    <img src="images/tshirt-black.png" style="width:100%" class="hero-img">
+                    <img src="images2/womanbanner1.jpg" style="width:100%" class="hero-img">
+                    <div class="hero-bg"></div>
                     <div class="hero-text-container">
                         <h1 class="hero-title">Title1</h1>
                         <p class="hero-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque
@@ -80,6 +84,7 @@
                 <span class="dot" onclick="currentSlide(3)"></span>
             </div>
         </article>
+
         <section id="merch-section">
             <aside class="aside">
                 <section class="sidebar" id="clothing-sidebar">
@@ -87,10 +92,10 @@
                         <h3>Clothing</h3>
                     </button>
                     <ul class="sidebar-links links">
-                        <li><a href="#">Shirts</a></li>
-                        <li><a href="#">Pants</a></li>
-                        <li><a href="#">Dresses</a></li>
-                        <li><a href="#">Swimware</a></li>
+                        <li id="side-Shirts"><a href="#">Shirts</a></li>
+                        <li id="side-Pants"><a href="#">Pants</a></li>
+                        <li id="side-Dresses"><a href="#">Dresses</a></li>
+                        <li id="side-Swimware"><a href="#">Swimware</a></li>
                     </ul>
                 </section>
 
@@ -99,11 +104,11 @@
                         <h3>Accessories</h3>
                     </button>
                     <ul class="sidebar-links links">
-                        <li><a href="#">Belts</a></li>
-                        <li><a href="#">Electronics</a></li>
-                        <li><a href="#">Handbags</a></li>
-                        <li><a href="#">Umbrellas</a></li>
-                        <li><a href="#">Jewelry</a></li>
+                        <li id="side-Belts"><a href="#">Belts</a></li>
+                        <li id="side-Electronics"><a href="#">Electronics</a></li>
+                        <li id="side-Handbags"><a href="#">Handbags</a></li>
+                        <li id="side-Umbrellas"><a href="#">Umbrellas</a></li>
+                        <li id="side-Jewelry"><a href="#">Jewelry</a></li>
                     </ul>
                 </section>
 
@@ -112,9 +117,9 @@
                         <h3>Shoes</h3>
                     </button>
                     <ul class="sidebar-links links">
-                        <li><a href="#">Boots</a></li>
-                        <li><a href="#">Heals</a></li>
-                        <li><a href="#">Casual</a></li>
+                        <li id="side-Boots"><a href="#">Boots</a></li>
+                        <li id="side-Heals"><a href="#">Heals</a></li>
+                        <li id="side-Casual"><a href="#">Casual</a></li>
                     </ul>
                 </section>
 
@@ -123,9 +128,9 @@
                         <h3>Gender</h3>
                     </button>
                     <ul class="sidebar-links links">
-                        <li><a href="#">Men</a></li>
-                        <li><a href="#">Woman</a></li>
-                        <li><a href="#">Kids</a></li>
+                        <li id="side-Men"><a href="#">Men</a></li>
+                        <li id="side-Woman"><a href="#">Woman</a></li>
+                        <li id="side-Kids"><a href="#">Kids</a></li>
                     </ul>
                 </section>
 
@@ -134,9 +139,9 @@
                         <h3>Pricing</h3>
                     </button>
                     <ul class="sidebar-links links">
-                        <li><a href="#">Highest First</a></li>
-                        <li><a href="#">Lowest First</a></li>
-                        <li><a href="#">Free Shipping</a></li>
+                        <li id="side-Highest-First"><a href="#">Highest First</a></li>
+                        <li id="side-Lowest-First"><a href="#">Lowest First</a></li>
+                        <li id="side-Free-Shipping"><a href="#">Free Shipping</a></li>
                     </ul>
                 </section>
             </aside>
@@ -191,10 +196,10 @@
                     <h3>Clothing</h3>
                 </button>
                 <ul class="footer-links links">
-                    <li><a href="#">Shirts</a></li>
-                    <li><a href="#">Pants</a></li>
-                    <li><a href="#">Dresses</a></li>
-                    <li><a href="#">Swimware</a></li>
+                    <li id="footer-Shirts"><a href="#">Shirts</a></li>
+                    <li id="footer-Pants"><a href="#">Pants</a></li>
+                    <li id="footer-Dresses"><a href="#">Dresses</a></li>
+                    <li id="footer-Swimware"><a href="#">Swimware</a></li>
                 </ul>
             </section>
 
@@ -203,11 +208,11 @@
                     <h3>Accessories</h3>
                 </button>
                 <ul class="footer-links links">
-                    <li><a href="#">Belts</a></li>
-                    <li><a href="#">Electronics</a></li>
-                    <li><a href="#">Handbags</a></li>
-                    <li><a href="#">Umbrellas</a></li>
-                    <li><a href="#">Jewelry</a></li>
+                    <li id="footer-Belts"><a href="#">Belts</a></li>
+                    <li id="footer-Electronics"><a href="#">Electronics</a></li>
+                    <li id="footer-Handbags"><a href="#">Handbags</a></li>
+                    <li id="footer-Umbrellas"><a href="#">Umbrellas</a></li>
+                    <li id="footer-Jewelry"><a href="#">Jewelry</a></li>
                 </ul>
             </section>
 
@@ -216,9 +221,9 @@
                     <h3>Shoes</h3>
                 </button>
                 <ul class="footer-links links">
-                    <li><a href="#">Boots</a></li>
-                    <li><a href="#">Heals</a></li>
-                    <li><a href="#">Casual</a></li>
+                    <li id="footer-Boots"><a href="#">Boots</a></li>
+                    <li id="footer-Heals"><a href="#">Heals</a></li>
+                    <li id="footer-Casual"><a href="#">Casual</a></li>
                 </ul>
             </section>
 
@@ -227,9 +232,9 @@
                     <h3>Gender</h3>
                 </button>
                 <ul class="footer-links links">
-                    <li><a href="#">Men</a></li>
-                    <li><a href="#">Woman</a></li>
-                    <li><a href="#">Kids</a></li>
+                    <li id="footer-Men"><a href="#">Men</a></li>
+                    <li id="footer-Woman"><a href="#">Woman</a></li>
+                    <li id="footer-Kids"><a href="#">Kids</a></li>
                 </ul>
             </section>
 
@@ -238,22 +243,22 @@
                     <h3>Pricing</h3>
                 </button>
                 <ul class="footer-links links">
-                    <li><a href="#">Highest First</a></li>
-                    <li><a href="#">Lowest First</a></li>
-                    <li><a href="#">Free Shipping</a></li>
+                    <li id="footer-Highest-First"><a href="#">Highest First</a></li>
+                    <li id="footer-Lowest-First"><a href="#">Lowest First</a></li>
+                    <li id="footer-Free-Shipping"><a href="#">Free Shipping</a></li>
                 </ul>
             </section>
         </section>
 
         <section id="social-media">
             <div>
-                <p><i class="fab fa-instagram"></i><span>Instagram</span></p>
+                <p><i id="footer-ins" class="fab fa-instagram"></i><span>Instagram</span></p>
             </div>
             <div>
-                <p><i class="fab fa-twitter-square"></i><span>Twitter</span></p>
+                <p><i id="footer-twitter" class="fab fa-twitter-square"></i><span>Twitter</span></p>
             </div>
             <div>
-                <p><i class="fab fa-facebook-square"></i><span>Facebook</span></p>
+                <p><i id="footer-facebook" class="fab fa-facebook-square"></i><span>Facebook</span></p>
             </div>
         </section>
 
