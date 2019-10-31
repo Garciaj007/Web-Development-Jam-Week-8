@@ -138,70 +138,77 @@ header {
             }
         }
     }
+}
+
+main {
+    width: inherit;
+    height: fit-content;
 
     article.hero {
+        box-sizing: border-box;
         background: getColor(primary);
         min-height: 300px;
         position: relative;
         padding: $padding;
     }
-}
 
-main {
-    width: fit-content;
-    height: fit-content;
-
-    aside.aside {
-        display: none;
-    }
-
-    section#content.content {
-        width: 100%;
+    section#merch-section {
+        width: inherit;
         height: fit-content;
-        box-sizing: border-box;
-        padding: $padding * 4;
-        padding-top: 0;
 
-        display: grid;
-        grid-template-columns: repeat( auto-fill, minmax(400pt, 2fr));
-    
-        figure.product-card {
-            margin: $margin;
+        aside.aside {
+            display: none;
+        }
 
-            position: relative;
-            background-color: getColor(accent2);
+        section#content.content {
+            width: 100%;
+            height: fit-content;
+            box-sizing: border-box;
+            padding: $padding * 4;
+            padding-top: 0;
 
-            a {
-                display: flex;
-                flex-flow: column nowrap;
-                justify-content: center;
-                align-items: center;
+            display: grid;
+            grid-template-rows: repeat(auto-fill, minmax(200pt, 2fr));
 
-                width: 100%;
-                height: 100%;
-                padding: $padding * 2;
+            figure.product-card {
+                margin: $margin;
                 box-sizing: border-box;
 
-                div.product-img-container {
+                position: relative;
+                background-color: getColor(accent2);
+
+                a {
+                    display: flex;
+                    flex-flow: column nowrap;
+                    justify-content: center;
+                    align-items: center;
+
                     width: 100%;
                     height: 100%;
+                    padding: $padding * 2;
                     box-sizing: border-box;
 
-                    img.product-image {
+                    div.product-img-container {
                         width: 100%;
                         height: 100%;
-                        object-fit: contain;
+                        box-sizing: border-box;
+
+                        img.product-image {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                        }
                     }
-                }
 
 
-                div {
-                    flex: 1 1 auto;
-                    display: flex;
-                    justify-content: space-between;
+                    div {
+                        flex: 1 1 auto;
+                        display: flex;
+                        justify-content: space-between;
 
-                    figcaption {
-                        padding: $padding / 2;
+                        figcaption {
+                            padding: $padding / 2;
+                        }
                     }
                 }
             }
@@ -329,15 +336,6 @@ footer {
 .prev:hover,
 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
-}
-
-.hero-bg {
-    position: absolute;
-    top: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    background-color: getColor(secondary);
 }
 
 .hero-img {
@@ -485,95 +483,89 @@ footer {
     }
 
     main {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
 
-        width: 100%;
-        height: fit-content;
+        section#merch-section {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
 
-        aside.aside {
-            display: flex;
-            flex-flow: column nowrap;
-            justify-content: space-evenly;
-            margin: $margin / 2;
-            padding: $padding / 4;
-            border: $border-width solid getColor(accent2);
-            height: fit-content;
-
-            section.sidebar {
-                height: fit-content;
-                display: flex;
-                flex-flow: column nowrap;
-                justify-content: space-between;
-                padding: $padding;
-
-                button {
-                    font-size: 1.1em;
-                    padding: $padding $padding * 2;
-                }
-            }
-        }
-
-        section#content.content {
             width: 100%;
             height: fit-content;
-            box-sizing: border-box;
-            padding: $padding * 4;
-            padding-top: 0;
-    
-            display: grid;
-            grid-template-columns: repeat( auto-fill, minmax(400pt, 2fr));
-        
-            figure.product-card {
-                margin: $margin;
-    
-                position: relative;
-                background-color: getColor(accent2);
-    
-                a {
+
+            aside.aside {
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: space-evenly;
+                margin: $margin / 2;
+                padding: $padding / 4;
+                border: $border-width solid getColor(accent2);
+                height: fit-content;
+
+                section.sidebar {
+                    height: fit-content;
                     display: flex;
                     flex-flow: column nowrap;
-                    justify-content: center;
-                    align-items: center;
-    
-                    width: 100%;
-                    height: 100%;
-                    padding: $padding * 2;
-                    box-sizing: border-box;
-    
-                    div.product-img-container {
+                    justify-content: space-between;
+                    padding: $padding;
+
+                    button {
+                        font-size: 1.1em;
+                        padding: $padding $padding * 2;
+                    }
+                }
+            }
+
+            section#content.content {
+                grid-template-columns: repeat(auto-fill, minmax(400pt, 2fr));
+
+                figure.product-card {
+                    margin: $margin;
+
+                    position: relative;
+                    background-color: getColor(accent2);
+
+                    a {
+                        display: flex;
+                        flex-flow: column nowrap;
+                        justify-content: center;
+                        align-items: center;
+
                         width: 100%;
                         height: 100%;
+                        padding: $padding * 2;
                         box-sizing: border-box;
-    
-                        img.product-image {
+
+                        div.product-img-container {
                             width: 100%;
                             height: 100%;
-                            object-fit: contain;
+                            box-sizing: border-box;
+
+                            img.product-image {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: contain;
+                            }
                         }
-                    }
-    
-    
-                    div {
-                        flex: 1 1 auto;
-                        display: flex;
-                        justify-content: space-between;
-    
-                        figcaption {
-                            padding: $padding / 2;
+
+
+                        div {
+                            flex: 1 1 auto;
+                            display: flex;
+                            justify-content: space-between;
+
+                            figcaption {
+                                padding: $padding / 2;
+                            }
                         }
                     }
                 }
             }
-        }
 
-        section#content.content {
-            grid-template-rows: 1fr 1fr;
-            grid-template-columns: 1fr 1fr;
+            section#content.content {
+                grid-template-rows: 1fr 1fr;
+                grid-template-columns: 1fr 1fr;
+            }
         }
     }
 }
 
-@media (min-width: 1024px) {
-    
-}
+@media (min-width: 1024px) {}

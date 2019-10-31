@@ -129,27 +129,34 @@ header nav#nav div.left-bar button#shopping-cart-btn i {
   font-size: 1.3rem;
 }
 
-header article.hero {
+main {
+  width: inherit;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+main article.hero {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background: #FCFCFC;
   min-height: 300px;
   position: relative;
   padding: 0.6rem;
 }
 
-main {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+main section#merch-section {
+  width: inherit;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
 
-main aside.aside {
+main section#merch-section aside.aside {
   display: none;
 }
 
-main section#content.content {
+main section#merch-section section#content.content {
   width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -160,17 +167,19 @@ main section#content.content {
   padding-top: 0;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(400pt, 2fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(400pt, 2fr));
+  -ms-grid-rows: (minmax(200pt, 2fr))[auto-fill];
+      grid-template-rows: repeat(auto-fill, minmax(200pt, 2fr));
 }
 
-main section#content.content figure.product-card {
+main section#merch-section section#content.content figure.product-card {
   margin: 0.8rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   position: relative;
   background-color: #59D6BD;
 }
 
-main section#content.content figure.product-card a {
+main section#merch-section section#content.content figure.product-card a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -191,21 +200,21 @@ main section#content.content figure.product-card a {
           box-sizing: border-box;
 }
 
-main section#content.content figure.product-card a div.product-img-container {
+main section#merch-section section#content.content figure.product-card a div.product-img-container {
   width: 100%;
   height: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-main section#content.content figure.product-card a div.product-img-container img.product-image {
+main section#merch-section section#content.content figure.product-card a div.product-img-container img.product-image {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
 
-main section#content.content figure.product-card a div {
+main section#merch-section section#content.content figure.product-card a div {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
@@ -217,7 +226,7 @@ main section#content.content figure.product-card a div {
           justify-content: space-between;
 }
 
-main section#content.content figure.product-card a div figcaption {
+main section#merch-section section#content.content figure.product-card a div figcaption {
   padding: 0.3rem;
 }
 
@@ -364,15 +373,6 @@ footer p.footer-description {
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
-}
-
-.hero-bg {
-  position: absolute;
-  top: 0;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  background-color: #232323;
 }
 
 .hero-img {
@@ -536,7 +536,7 @@ footer p.footer-description {
     min-height: 300px;
     position: relative;
   }
-  main {
+  main section#merch-section {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 2fr;
@@ -546,7 +546,7 @@ footer p.footer-description {
     height: -moz-fit-content;
     height: fit-content;
   }
-  main aside.aside {
+  main section#merch-section aside.aside {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -564,7 +564,7 @@ footer p.footer-description {
     height: -moz-fit-content;
     height: fit-content;
   }
-  main aside.aside section.sidebar {
+  main section#merch-section aside.aside section.sidebar {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -580,30 +580,20 @@ footer p.footer-description {
             justify-content: space-between;
     padding: 0.6rem;
   }
-  main aside.aside section.sidebar button {
+  main section#merch-section aside.aside section.sidebar button {
     font-size: 1.1em;
     padding: 0.6rem 1.2rem;
   }
-  main section#content.content {
-    width: 100%;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    padding: 2.4rem;
-    padding-top: 0;
-    display: -ms-grid;
-    display: grid;
+  main section#merch-section section#content.content {
     -ms-grid-columns: (minmax(400pt, 2fr))[auto-fill];
         grid-template-columns: repeat(auto-fill, minmax(400pt, 2fr));
   }
-  main section#content.content figure.product-card {
+  main section#merch-section section#content.content figure.product-card {
     margin: 0.8rem;
     position: relative;
     background-color: #59D6BD;
   }
-  main section#content.content figure.product-card a {
+  main section#merch-section section#content.content figure.product-card a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -623,19 +613,19 @@ footer p.footer-description {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
-  main section#content.content figure.product-card a div.product-img-container {
+  main section#merch-section section#content.content figure.product-card a div.product-img-container {
     width: 100%;
     height: 100%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
-  main section#content.content figure.product-card a div.product-img-container img.product-image {
+  main section#merch-section section#content.content figure.product-card a div.product-img-container img.product-image {
     width: 100%;
     height: 100%;
     -o-object-fit: contain;
        object-fit: contain;
   }
-  main section#content.content figure.product-card a div {
+  main section#merch-section section#content.content figure.product-card a div {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 auto;
             flex: 1 1 auto;
@@ -646,10 +636,10 @@ footer p.footer-description {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  main section#content.content figure.product-card a div figcaption {
+  main section#merch-section section#content.content figure.product-card a div figcaption {
     padding: 0.3rem;
   }
-  main section#content.content {
+  main section#merch-section section#content.content {
     -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     -ms-grid-columns: 1fr 1fr;
