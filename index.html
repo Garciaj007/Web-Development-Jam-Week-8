@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
-    <link href="styles/bittsreset.css" rel="stylesheet" type="text/css" />
+    <!--<link href="styles/bittsreset.css" rel="stylesheet" type="text/css" />-->
     <link href="styles/main.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Nanum+Gothic&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet"
@@ -32,9 +32,9 @@
             <div class="left-bar">
                 <div class="search">
                     <input type="text" name="search" id="search-bar" />
-                    <button id="search-btn" alt="search"><i class="fas fa-search"></i></button>
+                    <a id="search-btn" alt="search"><i class="fas fa-search"></i></a>
                 </div>
-                <button id="shopping-cart-btn" alt="shopping cart"><i class="fas fa-shopping-cart"></i></button>
+                <a id="shopping-cart-btn" alt="shopping cart"><i class="fas fa-shopping-cart"></i></a>
             </div>
         </nav>
     </header>
@@ -88,9 +88,9 @@
         <section id="merch-section">
             <aside class="aside">
                 <section class="sidebar" id="clothing-sidebar">
-                    <button class="sidebar-btn section-btn">
+                    <a class="sidebar-btn section-btn">
                         <h3>Clothing</h3>
-                    </button>
+                    </a>
                     <ul class="sidebar-links links">
                         <li id="side-Shirts"><a href="#">Shirts</a></li>
                         <li id="side-Pants"><a href="#">Pants</a></li>
@@ -100,9 +100,9 @@
                 </section>
 
                 <section class="sidebar" id="accessories-sidebar">
-                    <button class="sidebar-btn section-btn">
+                    <a class="sidebar-btn section-btn">
                         <h3>Accessories</h3>
-                    </button>
+                    </a>
                     <ul class="sidebar-links links">
                         <li id="side-Belts"><a href="#">Belts</a></li>
                         <li id="side-Electronics"><a href="#">Electronics</a></li>
@@ -113,9 +113,9 @@
                 </section>
 
                 <section class="sidebar" id="shoes-sidebar">
-                    <button class="sidebar-btn section-btn">
+                    <a class="sidebar-btn section-btn">
                         <h3>Shoes</h3>
-                    </button>
+                    </a>
                     <ul class="sidebar-links links">
                         <li id="side-Boots"><a href="#">Boots</a></li>
                         <li id="side-Heals"><a href="#">Heals</a></li>
@@ -124,9 +124,9 @@
                 </section>
 
                 <section class="sidebar" id="gender-sidebar">
-                    <button class="sidebar-btn section-btn">
+                    <a class="sidebar-btn section-btn">
                         <h3>Gender</h3>
-                    </button>
+                    </a>
                     <ul class="sidebar-links links">
                         <li id="side-Men"><a href="#">Men</a></li>
                         <li id="side-Woman"><a href="#">Woman</a></li>
@@ -135,9 +135,9 @@
                 </section>
 
                 <section class="sidebar" id="pricing-sidebar">
-                    <button class="sidebar-btn section-btn">
+                    <a class="sidebar-btn section-btn">
                         <h3>Pricing</h3>
-                    </button>
+                    </a>
                     <ul class="sidebar-links links">
                         <li id="side-Highest-First"><a href="#">Highest First</a></li>
                         <li id="side-Lowest-First"><a href="#">Lowest First</a></li>
@@ -147,44 +147,52 @@
             </aside>
 
             <section id="content" class="content">
-                <figure class="product-card">
-                    <a href="#">
-                        <div class="product-img-container">
-                            <img class="product-image" src="images/tshirt-black.png" alt="lorem ipsum" />
-                        </div>
-                        <div>
-                            <figcaption class="product-price">$0.00</figcaption>
-                            <figcaption class="product-title">Lorem ipsum dolor sit amet consectetur adipisicing elit
-                            </figcaption>
-                        </div>
-                    </a>
-                </figure>
-
-                <figure class="product-card">
-                    <a href="#">
-                        <div class="product-img-container">
-                            <img class="product-image" src="images/tshirt-black.png" alt="lorem ipsum" />
-                        </div>
-                        <div>
-                            <figcaption class="product-price">$0.00</figcaption>
-                            <figcaption class="product-title">Lorem ipsum dolor sit amet consectetur adipisicing elit
-                            </figcaption>
-                        </div>
-                    </a>
-                </figure>
-
-                <figure class="product-card">
-                    <a href="#">
-                        <div class="product-img-container">
-                            <img class="product-image" src="images/tshirt-black.png" alt="lorem ipsum" />
-                        </div>
-                        <div>
-                            <figcaption class="product-price">$0.00</figcaption>
-                            <figcaption class="product-title">Lorem ipsum dolor sit amet consectetur adipisicing elit
-                            </figcaption>
-                        </div>
-                    </a>
-                </figure>
+                    <section class="product-card">
+                            <figure>
+                                <a href="#">
+                                    <div class="product-img-container">
+                                        <img class="product-image" src="images/tshirt-black.png" alt="lorem ipsum" />
+                                    </div>
+                                    <div class="product-caption-container">
+                                        <figcaption class="product-price">$0.00</figcaption>
+                                        <figcaption class="product-title">Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit
+                                        </figcaption>
+                                    </div>
+                                </a>
+                            </figure>
+                        </section>
+                        <section class="product-card">
+                                <figure>
+                                    <a href="#">
+                                        <div class="product-img-container">
+                                            <img class="product-image" src="images/tshirt-black.png" alt="lorem ipsum" />
+                                        </div>
+                                        <div class="product-caption-container">
+                                            <figcaption class="product-price">$0.00</figcaption>
+                                            <figcaption class="product-title">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit
+                                            </figcaption>
+                                        </div>
+                                    </a>
+                                </figure>
+                            </section>
+                            <section class="product-card">
+                                    <figure>
+                                        <a href="#">
+                                            <div class="product-img-container">
+                                                <img class="product-image" src="images/tshirt-black.png" alt="lorem ipsum" />
+                                            </div>
+                                            <div class="product-caption-container">
+                                                <figcaption class="product-price">$0.00</figcaption>
+                                                <figcaption class="product-title">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                    elit
+                                                </figcaption>
+                                            </div>
+                                        </a>
+                                    </figure>
+                                </section>
+                
             </section>
         </section>
     </main>
@@ -192,9 +200,9 @@
     <footer>
         <section id="footer-links">
             <section class="footer-links-container">
-                <button class="footer-links-btn section-btn">
+                <a class="footer-links-btn section-btn">
                     <h3>Clothing</h3>
-                </button>
+                </a>
                 <ul class="footer-links links">
                     <li id="footer-Shirts"><a href="#">Shirts</a></li>
                     <li id="footer-Pants"><a href="#">Pants</a></li>
@@ -204,9 +212,9 @@
             </section>
 
             <section class="footer-links-container">
-                <button class="footer-links-btn section-btn">
+                <a class="footer-links-btn section-btn">
                     <h3>Accessories</h3>
-                </button>
+                </a>
                 <ul class="footer-links links">
                     <li id="footer-Belts"><a href="#">Belts</a></li>
                     <li id="footer-Electronics"><a href="#">Electronics</a></li>
@@ -217,9 +225,9 @@
             </section>
 
             <section class="footer-links-container">
-                <button class="footer-links-btn section-btn">
+                <a class="footer-links-btn section-btn">
                     <h3>Shoes</h3>
-                </button>
+                </a>
                 <ul class="footer-links links">
                     <li id="footer-Boots"><a href="#">Boots</a></li>
                     <li id="footer-Heals"><a href="#">Heals</a></li>
@@ -228,9 +236,9 @@
             </section>
 
             <section class="footer-links-container">
-                <button class="footer-links-btn section-btn">
+                <a class="footer-links-btn section-btn">
                     <h3>Gender</h3>
-                </button>
+                </a>
                 <ul class="footer-links links">
                     <li id="footer-Men"><a href="#">Men</a></li>
                     <li id="footer-Woman"><a href="#">Woman</a></li>
@@ -239,9 +247,9 @@
             </section>
 
             <section class="footer-links-container">
-                <button class="footer-links-btn section-btn">
+                <a class="footer-links-btn section-btn">
                     <h3>Pricing</h3>
-                </button>
+                </a>
                 <ul class="footer-links links">
                     <li id="footer-Highest-First"><a href="#">Highest First</a></li>
                     <li id="footer-Lowest-First"><a href="#">Lowest First</a></li>
@@ -252,13 +260,13 @@
 
         <section id="social-media">
             <div>
-                <p><i id="footer-ins" class="fab fa-instagram"></i><span>Instagram</span></p>
+                <a><i id="footer-ins" class="fab fa-instagram"></i><span>Instagram</span></a>
             </div>
             <div>
-                <p><i id="footer-twitter" class="fab fa-twitter-square"></i><span>Twitter</span></p>
+                <a><i id="footer-twitter" class="fab fa-twitter-square"></i><span>Twitter</span></a>
             </div>
             <div>
-                <p><i id="footer-facebook" class="fab fa-facebook-square"></i><span>Facebook</span></p>
+                <a><i id="footer-facebook" class="fab fa-facebook-square"></i><span>Facebook</span></a>
             </div>
         </section>
 
