@@ -13,7 +13,9 @@ function onHeaderClick(e) {
 
 function entryPoint(e) {
 
-    let images = 
+    let jsonData = JSON.parse(store-data);
+
+    console.log(jsonData);
 
     let filters = document.querySelectorAll("ul.links li a");
     let sidebars = document.querySelectorAll("a.section-btn");
@@ -27,4 +29,16 @@ function entryPoint(e) {
         elem.addEventListener("click", (e) => onFilterClick(e));
     });
 
+}
+
+function loadJSON(callback) {
+    let XMLJSON = new XMLHttpRequest();
+    XMLJSON.overrideMimeType("../scripts");
+    XMLJSON.open('GET', 'data-store.json', true);
+    XMLJSON.onreadystatechange = () => {
+        if(XMLJSON.readyState == 4 && XMLJSON.status == "200") {
+            return new Promise(() => XMLJSON.responseText);
+        }
+    }
+    XMLJSON.send(null);
 }

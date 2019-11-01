@@ -23,7 +23,11 @@ function pageReady(){
     var color5 = document.getElementById("col5");
     var color6 = document.getElementById("col6");
     
-    var descrip = document.getElementById("decrip");
+	var descrip = document.getElementById("decrip");
+	
+	let hello = {
+		name: "hello"
+	}
     
     
 	//image4
