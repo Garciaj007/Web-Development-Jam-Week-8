@@ -124,13 +124,13 @@
     "price": "$342.02",
     "name": "excepteur",
     "imagePaths": [
-      "../images2/",
-      "../images2/",
-      "../images2/",
-      "../images2/",
-      "../images2/",
-      "../images2/",
-      "../images2/"
+      "../images2/kidshoe_green.jpg",
+      "../images2/kidshoe_yellow.jpg",
+      "../images2/ribbon_red.jpg",
+      "../images2/ribbon_green.jpg",
+      "../images2/rainboots_yellow.jpg",
+      "../images2/rainboots_blue.jpg",
+      "../images2/rainsboot_green.jpg"
     ],
     "sex": "men",
     "itemSection": "pants",
