@@ -1,6 +1,8 @@
+/** LAB 6-1 IMAGE MOUSEOVER GALLERY*/
 //CREATE AN ONLOAD LISTENER
 window.onload = pageReady;
 
+//CREATE AN ONLOAD FUNCTION TO HOLD OUR CODE THAT NEEDS THE document OBJECT.
 function pageReady(){
 
 	//CREATE A HANDLE FOR THE MAIN IMAGE
@@ -23,6 +25,11 @@ function pageReady(){
     
     var descrip = document.getElementById("decrip");
     
+    
+	//image4
+	//image5
+	//image6
+
 	//SETUP LISTENERS FOR THE GALLERY IMAGES
 	color1.onclick = switchPic1;
 	color2.onclick = switchPic2;
@@ -83,4 +90,17 @@ function pageReady(){
 }
 
 
+	//CREATE FUNCTION TO RESET IMAGE
+	// function resetPic(){
+	//		bigImage.src = "images/tshirt-white.png";
+	//}
+
+	//RESET THE IMAGE WHEN MOUSE LEAVES
+	//SETUP LISTENERS
+	//image1.onmouseout = resetPic;
+	//image2.onmouseout = resetPic;
+	//image3.onmouseout = resetPic;
+	//
+	//
+	//
 }//END onload FUNCTION
