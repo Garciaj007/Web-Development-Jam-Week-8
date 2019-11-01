@@ -1,0 +1,80 @@
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background-color: #FCFCFC;
+  color: #232323;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  padding: 0.6rem;
+  font-family: 'Abril Fatface', cursive;
+  text-align: right;
+  border: solid 0.05rem #FCFCFC;
+  background-color: #6800f0;
+}
+
+h1 {
+  font-size: 2.7rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.35rem;
+}
+
+a {
+  border: none;
+  text-decoration: none;
+  display: block;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+a.img-nav-link {
+  display: block;
+  position: inherit;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+a.img-nav-link img {
+  width: 30pt;
+}
+
+a.img-nav-link:hover, a.img-nav-link:focus {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+  cursor: pointer;
+}
+
+a:hover, a:focus {
+  color: #FCFCFC;
+}
+
+div,
+p,
+a {
+  font-size: 0.9rem;
+}
+
+img {
+  vertical-align: middle;
+}
+/*# sourceMappingURL=item.css.map */

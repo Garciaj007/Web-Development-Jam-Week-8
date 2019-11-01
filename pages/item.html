@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/item.css" />
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Nanum+Gothic&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet"
+        type="text/css">
+    <script defer type="text/javascript" src="scripts/color-option.js"></script>
+    <script defer src="scripts/validate.js"></script>
+    <title>Code Jam</title>
+</head>
+
+<body>
+    <header>
+        <nav id="nav">
+            <div class="logo">
+                <a href="#" class="nav-link img-nav-link">
+                    <img src="../images/codejamlogo.jpg" alt="the logo">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li id="home-btn"><a href="#" id="home-btn" class="nav-link">Home</a></li>
+                <li id="merch-btn"><a href="#" id="merch-btn" class="nav-link">Merchandise</a></li>
+                <li id="contacts-btn"><a href="#" id="contacts-btn" class="nav-link">Contacts</a></li>
+            </ul>
+            <div class="left-bar">
+                <div class="search">
+                    <input type="text" name="search" id="search-bar" />
+                    <a id="search-btn" alt="search"><i class="fas fa-search"></i></a>
+                </div>
+                <a id="shopping-cart-btn" alt="shopping cart"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <div id="container">
+        <div id="showcase">
+            <p id="decription-size" class="description"> Small </p>
+            <p id="decription-color" class="description"> White </p>
+            <p id="decription-style" class="description"> Crew Cut </p>
+            <p id="decription-tshirt" class="description"> T-Shirt </p>
+
+            <!--MAIN IMAGE-->
+            <div id="topPic">
+                <img id="mainImg" src="../images/tshirt-white.png" width="200px" alt="the showing tshirt image"
+                    title="the showing tshirt" />
+            </div>
+
+            <!--THUMBNAIL GALLERY-->
+            <div id="others-tshirt">
+                <img id="pic1" src="../images/tshirt-white.png" width="30px" alt="Photo of a white-shirt" />
+                <img id="pic2" src="../images/tshirt-black.png" width="30px" alt="Photo of a black-shirt" />
+                <img id="pic3" src="../images/tshirt-red.png" width="30px" alt="Photo of a Rose" />
+                <img id="pic4" src="../images/tshirt-green.png" width="30px" alt="Photo of a green-shirt" />
+                <img id="pic5" src="../images/tshirt-purple.png" width="30px" alt="Photo of a purple" />
+                <img id="pic6" src="../images/tshirt-blue.png" width="30px" alt="Photo of a blue-shirt" />
+            </div>
+        </div>
+        <!-- showcase end -->
+        <div id="order">
+            <form>
+                <h2>Your Order: </h2>
+                <p>Select Colour: </p>
+                <div id="color-option">
+                    <img class="colour-block" id="col1" src="../images/white.png" width="30px" alt="white" />
+                    <img class="colour-block" id="col2" src="../images/black.png" width="30px" alt="black" />
+                    <img class="colour-block" id="col3" src="../images/red.png" width="30px" alt="red" />
+                    <img class="colour-block" id="col4" src="../images/green.png" width="30px" alt="green" />
+                    <img class="colour-block" id="col5" src="../images/purple.png" width="30px" alt="white" />
+                    <img class="colour-block" id="col6" src="../images/blue.png" width="30px" alt="blue" />
+                </div>
+                <div>
+                    <label for="size">Choose Size: </label>
+                    <select id="size" name="size" required>
+                        <option value="Small">S</option>
+                        <option value="Medium">M</option>
+                        <option value="Large">L</option>
+                        <option value="Extra Large">XL</option>
+                        <option value="Extra Extra Large">XXL</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="style">Choose Style: </label>
+                    <select id="style" name="style">
+                        <option value=" Crew Cut "> Crew Cut </option>
+                        <option value=" V Neck "> V Neck </option>
+                        <option value=" Y Neck "> Y Neck </option>
+                        <option value=" Scoop Neck "> Scoop Neck </option>
+                    </select>
+                </div>
+                <div>
+                    <label for="name">Name: </label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="address">Address: </label>
+                    <textarea id="address" name="address" required></textarea>
+                </div>
+                <div>
+                    <label for="delivery">Delivery Type: </label>
+                    <input type="radio" id="normal" name="deli" value="Normal" checked required>Normal
+                    <input type="radio" id="express" name="deli" value="Express(+$10.00)" required>Express(+$10.00)
+                </div>
+                <button type="submit" id="submit">Order</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <section id="footer-links">
+            <section class="footer-links-container">
+                <a class="footer-links-btn section-btn">
+                    <h3>Clothing</h3>
+                </a>
+                <ul class="footer-links links">
+                    <li id="footer-Shirts"><a href="#">Shirts</a></li>
+                    <li id="footer-Pants"><a href="#">Pants</a></li>
+                    <li id="footer-Dresses"><a href="#">Dresses</a></li>
+                    <li id="footer-Swimware"><a href="#">Swimware</a></li>
+                </ul>
+            </section>
+
+            <section class="footer-links-container">
+                <a class="footer-links-btn section-btn">
+                    <h3>Accessories</h3>
+                </a>
+                <ul class="footer-links links">
+                    <li id="footer-Belts"><a href="#">Belts</a></li>
+                    <li id="footer-Electronics"><a href="#">Electronics</a></li>
+                    <li id="footer-Handbags"><a href="#">Handbags</a></li>
+                    <li id="footer-Umbrellas"><a href="#">Umbrellas</a></li>
+                    <li id="footer-Jewelry"><a href="#">Jewelry</a></li>
+                </ul>
+            </section>
+
+            <section class="footer-links-container">
+                <a class="footer-links-btn section-btn">
+                    <h3>Shoes</h3>
+                </a>
+                <ul class="footer-links links">
+                    <li id="footer-Boots"><a href="#">Boots</a></li>
+                    <li id="footer-Heals"><a href="#">Heals</a></li>
+                    <li id="footer-Casual"><a href="#">Casual</a></li>
+                </ul>
+            </section>
+
+            <section class="footer-links-container">
+                <a class="footer-links-btn section-btn">
+                    <h3>Gender</h3>
+                </a>
+                <ul class="footer-links links">
+                    <li id="footer-Men"><a href="#">Men</a></li>
+                    <li id="footer-Woman"><a href="#">Woman</a></li>
+                    <li id="footer-Kids"><a href="#">Kids</a></li>
+                </ul>
+            </section>
+
+            <section class="footer-links-container">
+                <a class="footer-links-btn section-btn">
+                    <h3>Pricing</h3>
+                </a>
+                <ul class="footer-links links">
+                    <li id="footer-Highest-First"><a href="#">Highest First</a></li>
+                    <li id="footer-Lowest-First"><a href="#">Lowest First</a></li>
+                    <li id="footer-Free-Shipping"><a href="#">Free Shipping</a></li>
+                </ul>
+            </section>
+        </section>
+
+        <section id="social-media">
+            <div>
+                <a><i id="footer-ins" class="fab fa-instagram"></i><span>Instagram</span></a>
+            </div>
+            <div>
+                <a><i id="footer-twitter" class="fab fa-twitter-square"></i><span>Twitter</span></a>
+            </div>
+            <div>
+                <a><i id="footer-facebook" class="fab fa-facebook-square"></i><span>Facebook</span></a>
+            </div>
+        </section>
+
+        <p class="footer-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate dolorum
+            omnis dolores provident voluptates maiores quibusdam nobis illo atque, quod mollitia! Fuga magnam ducimus
+            unde nulla dolorem repellendus deleniti non?</p>
+
+        <div class="logo">
+            <a href="#" class="nav-link img-nav-link">
+                <img src="../images/codejamlogo.jpg" alt="the logo">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
