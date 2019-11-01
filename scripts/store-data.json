@@ -104,13 +104,13 @@
     "price": "$26.83",
     "name": "est",
     "imagePaths": [
-      "../images2/",
-      "../images2/",
-      "../images2/",
-      "../images2/",
-      "../images2/",
-      "../images2/",
-      "../images2/"
+      "../images2/manjacket_red.jpg",
+      "../images2/manjacket_yellow.jpg",
+      "../images2/manjacket_green.jpg",
+      "../images2/plad_yellow.jpg",
+      "../images2/pad_blue.jpg",
+      "../images2/plad_green.jpg",
+      "../images2/manjacket_blue.jpg"
     ],
     "sex": "men",
     "itemSection": "casual",
