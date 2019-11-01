@@ -1,0 +1,461 @@
+[{
+    "_id": "5dbc2be45b8b247ae277d15f",
+    "index": 0,
+    "price": "$118.03",
+    "name": "ad",
+    "imagePaths": [
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/"
+    ],
+    "sex": "kids",
+    "itemSection": "belts",
+    "description": [
+      "minim anim eu tempor sunt nostrud irure cillum consequat Lorem cupidatat eu anim aliquip ut aliqua enim ea aliquip fugiat incididunt quis mollit ipsum labore occaecat esse voluptate reprehenderit ipsum aliqua proident sint tempor in mollit consectetur quis incididunt do magna velit duis dolore commodo eiusmod eu non cupidatat laborum"
+    ]
+  },
+  {
+    "_id": "5dbc2be4e8f89f680719e523",
+    "index": 1,
+    "price": "$470.30",
+    "name": "non",
+    "imagePaths": [
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/"
+    ],
+    "sex": "kids",
+    "itemSection": "heals",
+    "description": [
+      "aliqua est voluptate et eu in in in fugiat ipsum sint enim reprehenderit ad voluptate et quis duis enim mollit Lorem esse amet et quis sit dolore in adipisicing ea amet et non laborum dolore mollit sit occaecat ullamco cillum in sint culpa quis voluptate do mollit ut magna pariatur"
+    ]
+  },
+  {
+    "_id": "5dbc2be4de0344172d5cbdb5",
+    "index": 2,
+    "price": "$140.37",
+    "name": "sit",
+    "imagePaths": [
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/"
+    ],
+    "sex": "kids",
+    "itemSection": "casual",
+    "description": [
+      "id reprehenderit sint qui duis est pariatur est laborum nostrud et pariatur ullamco eu est amet excepteur excepteur ad magna esse proident ut cupidatat eu deserunt nostrud incididunt laboris et commodo exercitation reprehenderit veniam occaecat ad nostrud laborum velit cillum fugiat ad enim enim eiusmod voluptate sit officia magna occaecat"
+    ]
+  },
+  {
+    "_id": "5dbc2be44fa17272ab9d7e34",
+    "index": 3,
+    "price": "$420.46",
+    "name": "sunt",
+    "imagePaths": [
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/"
+    ],
+    "sex": "women",
+    "itemSection": "boots",
+    "description": [
+      "ea id sunt dolor et fugiat enim eiusmod do dolor fugiat quis amet consectetur anim culpa velit dolore ad aliqua qui excepteur labore mollit tempor exercitation exercitation ad adipisicing nostrud ut irure tempor qui pariatur consequat quis do ad non pariatur ea ipsum voluptate reprehenderit velit sunt tempor consectetur dolore"
+    ]
+  },
+  {
+    "_id": "5dbc2be49cfb5a33aa531bbc",
+    "index": 4,
+    "price": "$400.73",
+    "name": "culpa",
+    "imagePaths": [
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/"
+    ],
+    "sex": "men",
+    "itemSection": "heals",
+    "description": [
+      "minim consequat aute aute velit consectetur dolore do nostrud duis et eiusmod quis enim incididunt tempor mollit magna cillum voluptate non pariatur amet minim ex commodo nostrud commodo do velit eiusmod cillum sit magna commodo aute aliquip aliqua sit magna qui sint laboris amet magna mollit enim reprehenderit magna veniam"
+    ]
+  },
+  {
+    "_id": "5dbc2be4a3fe0b8b9211fa08",
+    "index": 5,
+    "price": "$26.83",
+    "name": "est",
+    "imagePaths": [
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/"
+    ],
+    "sex": "men",
+    "itemSection": "casual",
+    "description": [
+      "velit voluptate exercitation ad sunt ad consectetur enim voluptate elit aliquip veniam eiusmod esse adipisicing adipisicing deserunt qui in ea consectetur laboris commodo ipsum dolor aliqua nisi officia dolore sit do aliqua duis sunt labore ipsum do aliqua Lorem sit minim fugiat ipsum est et proident incididunt enim reprehenderit occaecat"
+    ]
+  },
+  {
+    "_id": "5dbc2be479e340e3d8398689",
+    "index": 6,
+    "price": "$342.02",
+    "name": "excepteur",
+    "imagePaths": [
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/"
+    ],
+    "sex": "men",
+    "itemSection": "pants",
+    "description": [
+      "qui deserunt magna aute voluptate et aliqua incididunt qui anim labore veniam dolor reprehenderit fugiat adipisicing Lorem ad do sit velit proident proident elit adipisicing ipsum sit aliqua magna commodo dolor est consequat deserunt minim tempor ea officia commodo deserunt eiusmod mollit amet voluptate do incididunt officia dolor fugiat commodo"
+    ]
+  },
+  {
+    "_id": "5dbc2be4dc4ed7d54c55ebad",
+    "index": 7,
+    "price": "$31.00",
+    "name": "incididunt",
+    "imagePaths": [
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/"
+    ],
+    "sex": "kids",
+    "itemSection": "shirts",
+    "description": [
+      "labore enim duis officia sit non velit ad incididunt voluptate Lorem sint cillum sint anim amet pariatur pariatur aliqua excepteur occaecat culpa cillum occaecat irure cupidatat Lorem exercitation aliqua deserunt veniam officia laboris proident deserunt tempor veniam adipisicing nostrud commodo quis enim laborum quis duis laborum consequat sint exercitation incididunt"
+    ]
+  },
+  {
+    "_id": "5dbc2be48a22542e76a40185",
+    "index": 8,
+    "price": "$151.66",
+    "name": "esse",
+    "imagePaths": [
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/"
+    ],
+    "sex": "kids",
+    "itemSection": "jewelry",
+    "description": [
+      "do sit laboris aliquip et id laboris sunt minim est mollit nulla aute aliqua minim dolore enim culpa dolore ea esse ea ipsum do do est Lorem occaecat exercitation cillum ullamco proident excepteur minim magna laborum consectetur aliquip deserunt commodo mollit laborum reprehenderit fugiat officia minim cupidatat exercitation id dolore"
+    ]
+  },
+  {
+    "_id": "5dbc2be4b1ff1046ecfc139e",
+    "index": 9,
+    "price": "$427.70",
+    "name": "dolor",
+    "imagePaths": [
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/"
+    ],
+    "sex": "women",
+    "itemSection": "shirts",
+    "description": [
+      "consectetur velit est culpa eu elit eu et consequat anim voluptate voluptate ea ea reprehenderit duis proident id laborum Lorem velit ad Lorem laboris aliquip eiusmod ut dolore sint nisi ullamco mollit qui adipisicing enim nostrud et ea ea aute velit consequat ipsum officia Lorem minim occaecat mollit quis veniam"
+    ]
+  },
+  {
+    "_id": "5dbc2be41d872d4df13af708",
+    "index": 10,
+    "price": "$486.32",
+    "name": "nostrud",
+    "imagePaths": [
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/"
+    ],
+    "sex": "men",
+    "itemSection": "belts",
+    "description": [
+      "aliquip ut aute velit irure consectetur anim ex velit enim ad est ex non consequat irure ex occaecat aute pariatur aute aute quis magna adipisicing dolore consectetur mollit deserunt occaecat culpa et incididunt ad aliqua est laboris veniam pariatur et voluptate reprehenderit proident ea ex irure aute sint officia eu"
+    ]
+  },
+  {
+    "_id": "5dbc2be40dd2b020a1ddbb96",
+    "index": 11,
+    "price": "$432.49",
+    "name": "reprehenderit",
+    "imagePaths": [
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/"
+    ],
+    "sex": "men",
+    "itemSection": "dresses",
+    "description": [
+      "labore nulla velit anim ad irure id amet sunt labore labore elit ut consectetur consectetur nulla excepteur cillum dolor commodo dolor sint consectetur irure pariatur culpa ea dolore deserunt aliqua labore non exercitation tempor deserunt magna culpa tempor elit tempor proident sunt consectetur incididunt dolore do amet pariatur deserunt excepteur"
+    ]
+  },
+  {
+    "_id": "5dbc2be4b0d9395e3aff51bb",
+    "index": 12,
+    "price": "$294.87",
+    "name": "fugiat",
+    "imagePaths": [
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/"
+    ],
+    "sex": "men",
+    "itemSection": "handbags",
+    "description": [
+      "dolore non duis adipisicing minim id nostrud labore in in sint sit laborum amet commodo cupidatat ipsum ipsum irure eiusmod sunt tempor et adipisicing nulla incididunt ea Lorem aliqua dolor culpa ad pariatur ullamco qui magna eu dolor nulla est occaecat exercitation fugiat deserunt anim duis culpa officia occaecat incididunt"
+    ]
+  },
+  {
+    "_id": "5dbc2be46c217c0ebf552b43",
+    "index": 13,
+    "price": "$145.54",
+    "name": "Lorem",
+    "imagePaths": [
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/"
+    ],
+    "sex": "women",
+    "itemSection": "jewelry",
+    "description": [
+      "ut esse irure ea nisi consequat incididunt cupidatat fugiat consectetur ullamco nisi aute deserunt magna adipisicing labore mollit laborum sunt eu proident commodo mollit elit ipsum ad non in labore nostrud officia proident incididunt sunt non eu adipisicing eiusmod eiusmod cillum aute officia in non consequat do commodo laborum amet"
+    ]
+  },
+  {
+    "_id": "5dbc2be481d5e204eb259eaa",
+    "index": 14,
+    "price": "$418.00",
+    "name": "irure",
+    "imagePaths": [
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/"
+    ],
+    "sex": "women",
+    "itemSection": "umbrellas",
+    "description": [
+      "labore duis dolore aute excepteur quis duis minim nulla laborum sunt qui elit officia non reprehenderit qui ut adipisicing cillum tempor laborum nisi Lorem enim aliquip proident sit consequat culpa est consectetur veniam labore eiusmod est mollit culpa consequat elit cillum labore nostrud Lorem dolor incididunt ad aliquip duis deserunt"
+    ]
+  },
+  {
+    "_id": "5dbc2be466af19d1e19404e2",
+    "index": 15,
+    "price": "$122.14",
+    "name": "velit",
+    "imagePaths": [
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/"
+    ],
+    "sex": "women",
+    "itemSection": "shirts",
+    "description": [
+      "non et ea dolore excepteur aute nisi commodo culpa duis ex magna est cupidatat ipsum reprehenderit Lorem cupidatat pariatur eu ea pariatur quis deserunt reprehenderit do minim consectetur cillum veniam officia qui nostrud cillum proident ipsum dolore anim nulla velit duis tempor culpa exercitation deserunt reprehenderit adipisicing amet deserunt cillum"
+    ]
+  },
+  {
+    "_id": "5dbc2be4603c23951bdb514f",
+    "index": 16,
+    "price": "$436.75",
+    "name": "nisi",
+    "imagePaths": [
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/"
+    ],
+    "sex": "men",
+    "itemSection": "casual",
+    "description": [
+      "elit adipisicing minim labore proident qui adipisicing ut aliqua voluptate occaecat sunt Lorem ad adipisicing aute voluptate amet velit aliquip incididunt velit esse occaecat anim proident sit eiusmod ex adipisicing nisi minim fugiat ad do cupidatat dolor Lorem tempor nisi ea reprehenderit ad non deserunt voluptate ipsum elit culpa incididunt"
+    ]
+  },
+  {
+    "_id": "5dbc2be46a25fcf0fbd844b7",
+    "index": 17,
+    "price": "$264.95",
+    "name": "ut",
+    "imagePaths": [
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/"
+    ],
+    "sex": "men",
+    "itemSection": "shirts",
+    "description": [
+      "anim ad id esse in consectetur in deserunt proident ut magna fugiat culpa dolore nostrud exercitation ullamco aliquip ad ipsum tempor velit irure cupidatat do labore enim ullamco sit in aliqua nostrud adipisicing do minim anim adipisicing est veniam Lorem laborum consequat velit proident Lorem Lorem voluptate aliqua aliqua cupidatat"
+    ]
+  },
+  {
+    "_id": "5dbc2be4d5d1bcff27e821f7",
+    "index": 18,
+    "price": "$262.24",
+    "name": "tempor",
+    "imagePaths": [
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/"
+    ],
+    "sex": "women",
+    "itemSection": "heals",
+    "description": [
+      "cupidatat consequat ut laborum ipsum elit et eu consectetur occaecat proident consectetur ipsum eu ad laboris incididunt dolore do id tempor exercitation fugiat sit adipisicing reprehenderit reprehenderit amet eu magna anim aliquip ad ullamco esse aliqua laboris eiusmod exercitation eu qui deserunt exercitation eiusmod exercitation deserunt dolor deserunt aliqua cillum"
+    ]
+  },
+  {
+    "_id": "5dbc2be4772b256fb48673a8",
+    "index": 19,
+    "price": "$85.34",
+    "name": "pariatur",
+    "imagePaths": [
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/"
+    ],
+    "sex": "women",
+    "itemSection": "handbags",
+    "description": [
+      "proident aliqua dolor exercitation ea pariatur culpa ex sint enim nostrud aliquip culpa mollit in do nisi ullamco Lorem qui deserunt aliqua est nostrud nostrud reprehenderit nostrud cupidatat pariatur eu culpa Lorem culpa eu mollit amet deserunt aliqua aliquip amet sunt anim elit ea qui ut in magna non enim"
+    ]
+  },
+  {
+    "_id": "5dbc2be4ef1c6cca2f1102f1",
+    "index": 20,
+    "price": "$278.86",
+    "name": "voluptate",
+    "imagePaths": [
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/"
+    ],
+    "sex": "women",
+    "itemSection": "pants",
+    "description": [
+      "qui deserunt ut veniam occaecat eu eiusmod et ex sunt voluptate aliqua velit labore proident ipsum laboris incididunt laboris qui nisi eu labore aliqua in commodo velit sit culpa Lorem consectetur consequat exercitation nisi laborum duis anim in laborum reprehenderit cupidatat Lorem ipsum nisi magna ad sit exercitation nostrud incididunt"
+    ]
+  },
+  {
+    "_id": "5dbc2be4cdfde64a525d5907",
+    "index": 21,
+    "price": "$145.41",
+    "name": "Lorem",
+    "imagePaths": [
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/"
+    ],
+    "sex": "women",
+    "itemSection": "belts",
+    "description": [
+      "consequat sint tempor eu amet sit est anim laborum nisi cillum aliquip in mollit in consequat proident id officia sint magna consectetur irure exercitation laboris aute eu anim laboris pariatur sit Lorem labore laboris amet ad qui nisi mollit magna ullamco cillum ipsum ullamco aliqua ipsum in reprehenderit deserunt in"
+    ]
+  },
+  {
+    "_id": "5dbc2be4f17e6f4d538c5552",
+    "index": 22,
+    "price": "$308.90",
+    "name": "culpa",
+    "imagePaths": [
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/",
+      "../images2/"
+    ],
+    "sex": "women",
+    "itemSection": "belts",
+    "description": [
+      "non culpa deserunt irure ad consectetur dolore magna et qui officia irure anim sint qui eu ullamco ipsum ut ex non dolore pariatur commodo veniam enim enim in esse eiusmod aute labore minim pariatur qui id ad cupidatat aute nostrud ut pariatur reprehenderit sit culpa labore proident aliqua commodo consequat"
+    ]
+  }
+]
