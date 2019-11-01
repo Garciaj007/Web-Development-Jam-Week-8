@@ -4,13 +4,13 @@
     "price": "$118.03",
     "name": "ad",
     "imagePaths": [
-      "../images2/",
-      "../images2/",
-      "../images2/",
-      "../images2/",
-      "../images2/",
-      "../images2/",
-      "../images2/"
+      "../images2/belt_black.jpg",
+      "../images2/belt_blue.jpg",
+      "../images2/belt_yellow.jpg",
+      "../images2/belt_red.jpg",
+      "../images2/belt_green.jpg",
+      "../images2/fan_blue.jpg",
+      "../images2/fan_red.jpg"
     ],
     "sex": "kids",
     "itemSection": "belts",
