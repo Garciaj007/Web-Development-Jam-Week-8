@@ -324,11 +324,23 @@ footer p.footer-description {
 
 .links {
   margin-left: 0.8rem;
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
 }
 
 .links li {
   margin: 0.4rem 0;
+  list-style: none;
+}
+
+.links li a:hover, .links li a:focus {
+  background-color: #6800f0;
+  padding: 0.6rem;
 }
 
 .section-btn {

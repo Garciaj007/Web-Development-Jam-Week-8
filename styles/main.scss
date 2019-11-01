@@ -285,10 +285,19 @@ footer {
 
 .links {
     margin-left: $margin;
-    display: none;
+    display: flex;
+    flex-flow: column nowrap;
 
     li {
         margin: $margin / 2 0;
+        list-style: none;
+
+        a{
+            &:hover, &:focus {
+                background-color: getColor(accent1);
+                padding: $padding;
+            }
+        }
     }
 }
 
