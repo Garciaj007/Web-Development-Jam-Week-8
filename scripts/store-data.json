@@ -24,13 +24,13 @@
     "price": "$470.30",
     "name": "non",
     "imagePaths": [
-      "../images2/",
-      "../images2/",
-      "../images2/",
-      "../images2/",
-      "../images2/",
-      "../images2/",
-      "../images2/"
+      "../images2/manpant_green.jpg",
+      "../images2/pant_red.jpg",
+      "../images2/pant_blue.jpg",
+      "../images2/manpant.jpg",
+      "../images2/pant.jpg",
+      "../images2/manpant_blue.jpg",
+      "../images2/pant_green.jpg"
     ],
     "sex": "kids",
     "itemSection": "heals",
