@@ -1,0 +1,91 @@
+$margin: 0.8rem;
+$padding: 0.6rem;
+$border-width: 0.1rem;
+$border-radius: 0pt;
+$icon-size: 1.3rem;
+$gap-size: 0.2rem;
+$base-font-size: 0.9rem;
+
+$colors: (primary: #FCFCFC, secondary: #232323, accent1: rgb(104, 0, 240), accent2: #59D6BD);
+
+@function getColor($color) {
+    @return map-get($map: $colors, $key: $color);
+}
+
+@function getColorAlpha($color, $alpha) {
+    @return rgba(getColor($color), $alpha);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-color: getColor(primary);
+    color: getColor(secondary);
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    padding: $padding;
+    font-family: 'Abril Fatface', cursive;
+    text-align: right;
+    border: solid $border-width / 2 getColor(primary);
+    background-color: getColor(accent1);
+}
+
+h1 {
+    font-size: $base-font-size * 3;
+}
+
+h2 {
+    font-size: $base-font-size * 2;
+}
+
+h3 {
+    font-size: $base-font-size * 1.5;
+}
+
+a {
+    border: none;
+    text-decoration: none;
+    display: block;
+    transition: 0.5s;
+
+    &.img-nav-link {
+        display: block;
+        position: inherit;
+        width: fit-content;
+        height: fit-content;
+
+        img {
+            width: 30pt;
+        }
+
+        &:hover, &:focus{
+            transform: scale(1.4);
+            cursor: pointer;
+        }
+    }
+
+    &:hover, &:focus {
+        color: getColor(primary);
+    }
+}
+
+div,
+p,
+a {
+    font-size: $base-font-size;
+}
+
+img {
+    vertical-align: middle;
+}

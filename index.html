@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
-    <link href="styles/bittsreset.css" rel="stylesheet" type="text/css" />
+    <!--<link href="styles/bittsreset.css" rel="stylesheet" type="text/css" />-->
     <link href="styles/main.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Nanum+Gothic&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet"
         type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto&display=swap" rel="stylesheet">
-    <script defer src="scripts/validate.js"></script>
+    
 </head>
 
 <body>
@@ -31,17 +31,19 @@
             <div class="left-bar">
                 <div class="search">
                     <input type="text" name="search" id="search-bar" />
-                    <button id="search-btn" alt="search"><i class="fas fa-search"></i></button>
+                    <a id="search-btn" alt="search"><i class="fas fa-search"></i></a>
                 </div>
-                <button id="shopping-cart-btn" alt="shopping cart"><i class="fas fa-shopping-cart"></i></button>
+                <a id="shopping-cart-btn" alt="shopping cart"><i class="fas fa-shopping-cart"></i></a>
             </div>
         </nav>
+    </header>
 
+    <main>
         <article class="hero">
             <div class="slideshow-container">
 
                 <div class="my-slides fade">
-                    <img src="images/tshirt-black.png" style="width:100%" class="hero-img">
+                    <img src="images2/womanbanner2.jpg" style="width:100%" class="hero-img">
                     <div class="hero-bg"></div>
                     <div class="hero-text-container">
                         <h1 class="hero-title">Title1</h1>
@@ -51,7 +53,7 @@
                 </div>
 
                 <div class="my-slides fade">
-                    <img src="images/tshirt-black.png" style="width:100%" class="hero-img">
+                    <img src="images2/manbanner2.jpg" style="width:100%" class="hero-img">
                     <div class="hero-bg"></div>
                     <div class="hero-text-container">
                         <h1 class="hero-title">Title1</h1>
@@ -61,7 +63,7 @@
                 </div>
 
                 <div class="my-slides fade">
-                    <img src="images/tshirt-black.png" style="width:100%" class="hero-img">
+                    <img src="images2/womanbanner1.jpg" style="width:100%" class="hero-img">
                     <div class="hero-bg"></div>
                     <div class="hero-text-container">
                         <h1 class="hero-title">Title1</h1>
@@ -81,129 +83,137 @@
                 <span class="dot" onclick="currentSlide(3)"></span>
             </div>
         </article>
-    </header>
 
-    <main>
-        <aside class="aside">
-            <section class="sidebar" id="clothing-sidebar">
-                <button class="sidebar-btn section-btn">
-                    <h3>Clothing</h3>
-                </button>
-                <ul class="sidebar-links links">
-                    <li id="side-Shirts"><a href="#">Shirts</a></li>
-                    <li id="side-Pants"><a href="#">Pants</a></li>
-                    <li id="side-Dresses"><a href="#">Dresses</a></li>
-                    <li id="side-Swimware"><a href="#">Swimware</a></li>
-                </ul>
+        <section id="merch-section">
+            <aside class="aside">
+                <section class="sidebar" id="clothing-sidebar">
+                    <a class="sidebar-btn section-btn">
+                        <h3>Clothing</h3>
+                    </a>
+                    <ul class="sidebar-links links">
+                        <li id="side-Shirts"><a href="#">Shirts</a></li>
+                        <li id="side-Pants"><a href="#">Pants</a></li>
+                        <li id="side-Dresses"><a href="#">Dresses</a></li>
+                        <li id="side-Swimware"><a href="#">Swimware</a></li>
+                    </ul>
+                </section>
+
+                <section class="sidebar" id="accessories-sidebar">
+                    <a class="sidebar-btn section-btn">
+                        <h3>Accessories</h3>
+                    </a>
+                    <ul class="sidebar-links links">
+                        <li id="side-Belts"><a href="#">Belts</a></li>
+                        <li id="side-Electronics"><a href="#">Electronics</a></li>
+                        <li id="side-Handbags"><a href="#">Handbags</a></li>
+                        <li id="side-Umbrellas"><a href="#">Umbrellas</a></li>
+                        <li id="side-Jewelry"><a href="#">Jewelry</a></li>
+                    </ul>
+                </section>
+
+                <section class="sidebar" id="shoes-sidebar">
+                    <a class="sidebar-btn section-btn">
+                        <h3>Shoes</h3>
+                    </a>
+                    <ul class="sidebar-links links">
+                        <li id="side-Boots"><a href="#">Boots</a></li>
+                        <li id="side-Heals"><a href="#">Heals</a></li>
+                        <li id="side-Casual"><a href="#">Casual</a></li>
+                    </ul>
+                </section>
+
+                <section class="sidebar" id="gender-sidebar">
+                    <a class="sidebar-btn section-btn">
+                        <h3>Gender</h3>
+                    </a>
+                    <ul class="sidebar-links links">
+                        <li id="side-Men"><a href="#">Men</a></li>
+                        <li id="side-Woman"><a href="#">Woman</a></li>
+                        <li id="side-Kids"><a href="#">Kids</a></li>
+                    </ul>
+                </section>
+
+                <section class="sidebar" id="pricing-sidebar">
+                    <a class="sidebar-btn section-btn">
+                        <h3>Pricing</h3>
+                    </a>
+                    <ul class="sidebar-links links">
+                        <li id="side-Highest-First"><a href="#">Highest First</a></li>
+                        <li id="side-Lowest-First"><a href="#">Lowest First</a></li>
+                        <li id="side-Free-Shipping"><a href="#">Free Shipping</a></li>
+                    </ul>
+                </section>
+            </aside>
+
+            <section id="content" class="content">
+                    <section class="product-card">
+                            <figure>
+                                <a href="#">
+                                    <div class="product-img-container">
+                                        <img class="product-image" src="images/tshirt-black.png" alt="lorem ipsum" />
+                                    </div>
+                                    <div class="product-caption-container">
+                                        <figcaption class="product-price">$0.00</figcaption>
+                                        <figcaption class="product-title">Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit
+                                        </figcaption>
+                                    </div>
+                                </a>
+                            </figure>
+                        </section>
+                        <section class="product-card">
+                                <figure>
+                                    <a href="#">
+                                        <div class="product-img-container">
+                                            <img class="product-image" src="images/tshirt-black.png" alt="lorem ipsum" />
+                                        </div>
+                                        <div class="product-caption-container">
+                                            <figcaption class="product-price">$0.00</figcaption>
+                                            <figcaption class="product-title">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit
+                                            </figcaption>
+                                        </div>
+                                    </a>
+                                </figure>
+                            </section>
+                            <section class="product-card">
+                                    <figure>
+                                        <a href="#">
+                                            <div class="product-img-container">
+                                                <img class="product-image" src="images/tshirt-black.png" alt="lorem ipsum" />
+                                            </div>
+                                            <div class="product-caption-container">
+                                                <figcaption class="product-price">$0.00</figcaption>
+                                                <figcaption class="product-title">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                    elit
+                                                </figcaption>
+                                            </div>
+                                        </a>
+                                    </figure>
+                                </section>
+                
             </section>
-
-            <section class="sidebar" id="accessories-sidebar">
-                <button class="sidebar-btn section-btn">
-                    <h3>Accessories</h3>
-                </button>
-                <ul class="sidebar-links links">
-                    <li id="side-Belts"><a href="#">Belts</a></li>
-                    <li id="side-Electronics"><a href="#">Electronics</a></li>
-                    <li id="side-Handbags"><a href="#">Handbags</a></li>
-                    <li id="side-Umbrellas"><a href="#">Umbrellas</a></li>
-                    <li id="side-Jewelry"><a href="#">Jewelry</a></li>
-                </ul>
-            </section>
-
-            <section class="sidebar" id="shoes-sidebar">
-                <button class="sidebar-btn section-btn">
-                    <h3>Shoes</h3>
-                </button>
-                <ul class="sidebar-links links">
-                    <li id="side-Boots"><a href="#">Boots</a></li>
-                    <li id="side-Heals"><a href="#">Heals</a></li>
-                    <li id="side-Casual"><a href="#">Casual</a></li>
-                </ul>
-            </section>
-
-            <section class="sidebar" id="gender-sidebar">
-                <button class="sidebar-btn section-btn">
-                    <h3>Gender</h3>
-                </button>
-                <ul class="sidebar-links links">
-                    <li id="side-Men"><a href="#">Men</a></li>
-                    <li id="side-Woman"><a href="#">Woman</a></li>
-                    <li id="side-Kids"><a href="#">Kids</a></li>
-                </ul>
-            </section>
-
-            <section class="sidebar" id="pricing-sidebar">
-                <button class="sidebar-btn section-btn">
-                    <h3>Pricing</h3>
-                </button>
-                <ul class="sidebar-links links">
-                    <li id="side-Highest-First"><a href="#">Highest First</a></li>
-                    <li id="side-Lowest-First"><a href="#">Lowest First</a></li>
-                    <li id="side-Free-Shipping"><a href="#">Free Shipping</a></li>
-                </ul>
-            </section>
-        </aside>
-
-        <section id="content" class="content">
-            <figure class="product-card">
-                <a href="#">
-                    <div class="product-img-container">
-                        <img class="product-image" src="images/tshirt-black.png" alt="lorem ipsum" />
-                    </div>
-                    <div>
-                        <figcaption class="product-price">$0.00</figcaption>
-                        <figcaption class="product-title">Lorem ipsum dolor sit amet consectetur adipisicing elit
-                        </figcaption>
-                    </div>
-                </a>
-            </figure>
-
-            <figure class="product-card">
-                <a href="#">
-                    <div class="product-img-container">
-                        <img class="product-image" src="images/tshirt-black.png" alt="lorem ipsum" />
-                    </div>
-                    <div>
-                        <figcaption class="product-price">$0.00</figcaption>
-                        <figcaption class="product-title">Lorem ipsum dolor sit amet consectetur adipisicing elit
-                        </figcaption>
-                    </div>
-                </a>
-            </figure>
-
-            <figure class="product-card">
-                <a href="#">
-                    <div class="product-img-container">
-                        <img class="product-image" src="images/tshirt-black.png" alt="lorem ipsum" />
-                    </div>
-                    <div>
-                        <figcaption class="product-price">$0.00</figcaption>
-                        <figcaption class="product-title">Lorem ipsum dolor sit amet consectetur adipisicing elit
-                        </figcaption>
-                    </div>
-                </a>
-            </figure>
         </section>
     </main>
 
     <footer>
         <section id="footer-links">
             <section class="footer-links-container">
-                <button class="footer-links-btn section-btn">
+                <a class="footer-links-btn section-btn">
                     <h3>Clothing</h3>
-                </button>
+                </a>
                 <ul class="footer-links links">
-                        <li id="footer-Shirts"><a href="#">Shirts</a></li>
-                        <li id="footer-Pants"><a href="#">Pants</a></li>
-                        <li id="footer-Dresses"><a href="#">Dresses</a></li>
-                        <li id="footer-Swimware"><a href="#">Swimware</a></li>
+                    <li id="footer-Shirts"><a href="#">Shirts</a></li>
+                    <li id="footer-Pants"><a href="#">Pants</a></li>
+                    <li id="footer-Dresses"><a href="#">Dresses</a></li>
+                    <li id="footer-Swimware"><a href="#">Swimware</a></li>
                 </ul>
             </section>
 
             <section class="footer-links-container">
-                <button class="footer-links-btn section-btn">
+                <a class="footer-links-btn section-btn">
                     <h3>Accessories</h3>
-                </button>
+                </a>
                 <ul class="footer-links links">
                     <li id="footer-Belts"><a href="#">Belts</a></li>
                     <li id="footer-Electronics"><a href="#">Electronics</a></li>
@@ -214,9 +224,9 @@
             </section>
 
             <section class="footer-links-container">
-                <button class="footer-links-btn section-btn">
+                <a class="footer-links-btn section-btn">
                     <h3>Shoes</h3>
-                </button>
+                </a>
                 <ul class="footer-links links">
                     <li id="footer-Boots"><a href="#">Boots</a></li>
                     <li id="footer-Heals"><a href="#">Heals</a></li>
@@ -225,9 +235,9 @@
             </section>
 
             <section class="footer-links-container">
-                <button class="footer-links-btn section-btn">
+                <a class="footer-links-btn section-btn">
                     <h3>Gender</h3>
-                </button>
+                </a>
                 <ul class="footer-links links">
                     <li id="footer-Men"><a href="#">Men</a></li>
                     <li id="footer-Woman"><a href="#">Woman</a></li>
@@ -236,9 +246,9 @@
             </section>
 
             <section class="footer-links-container">
-                <button class="footer-links-btn section-btn">
+                <a class="footer-links-btn section-btn">
                     <h3>Pricing</h3>
-                </button>
+                </a>
                 <ul class="footer-links links">
                     <li id="footer-Highest-First"><a href="#">Highest First</a></li>
                     <li id="footer-Lowest-First"><a href="#">Lowest First</a></li>
@@ -249,13 +259,13 @@
 
         <section id="social-media">
             <div>
-                <p><i id="footer-ins" class="fab fa-instagram"></i><span>Instagram</span></p>
+                <a><i id="footer-ins" class="fab fa-instagram"></i><span>Instagram</span></a>
             </div>
             <div>
-                <p><i id="footer-twitter" class="fab fa-twitter-square"></i><span>Twitter</span></p>
+                <a><i id="footer-twitter" class="fab fa-twitter-square"></i><span>Twitter</span></a>
             </div>
             <div>
-                <p><i id="footer-facebook" class="fab fa-facebook-square"></i><span>Facebook</span></p>
+                <a><i id="footer-facebook" class="fab fa-facebook-square"></i><span>Facebook</span></a>
             </div>
         </section>
 
