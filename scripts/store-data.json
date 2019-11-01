@@ -44,13 +44,13 @@
     "price": "$140.37",
     "name": "sit",
     "imagePaths": [
-      "../images2/",
-      "../images2/",
-      "../images2/",
-      "../images2/",
-      "../images2/",
-      "../images2/",
-      "../images2/"
+      "../images2/short.jpg",
+      "../images2/short_red.jpg",
+      "../images2/swim_red.jpg",
+      "../images2/swim_green.jpg",
+      "../images2/shoes_green.jpg",
+      "../images2/glasses_red.jpg",
+      "../images2/ring_blue.jpg"
     ],
     "sex": "kids",
     "itemSection": "casual",
@@ -64,13 +64,13 @@
     "price": "$420.46",
     "name": "sunt",
     "imagePaths": [
-      "../images2/",
-      "../images2/",
-      "../images2/",
-      "../images2/",
-      "../images2/",
-      "../images2/",
-      "../images2/"
+      "../images2/boots_green.jpg",
+      "../images2/dress_green.jpg",
+      "../images2/dress_yellow.jpg",
+      "../images2/boots_blue.jpg",
+      "../images2/usb_red.jpg",
+      "../images2/usb_blue.jpg",
+      "../images2/usb_green.jpg"
     ],
     "sex": "women",
     "itemSection": "boots",
@@ -84,13 +84,13 @@
     "price": "$400.73",
     "name": "culpa",
     "imagePaths": [
-      "../images2/",
-      "../images2/",
-      "../images2/",
-      "../images2/",
-      "../images2/",
-      "../images2/",
-      "../images2/"
+      "../images2/heel2_green.jpg",
+      "../images2/heelboot_black.jpg",
+      "../images2/heel2_red.jpg",
+      "../images2/handbag_yellow.jpg",
+      "../images2/handbag_green.jpg",
+      "../images2/heelboot_blue.jpg",
+      "../images2/flatshoe_green.jpg"
     ],
     "sex": "men",
     "itemSection": "heals",
