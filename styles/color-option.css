@@ -15,7 +15,7 @@ body{
 #showcase{
     position: relative;
 	width: 30%;
-	
+	left: 300px;
 
     float: left;	
 }
@@ -24,6 +24,11 @@ body{
     position: relative;
     width: 30%;
     float: right;
+    right: 150px;
+}
+
+h2{
+    text-align: center;
 }
 
 #topPic{
